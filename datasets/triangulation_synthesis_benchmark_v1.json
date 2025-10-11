@@ -1,0 +1,2302 @@
+[
+  {
+    "id": "synthesis_001",
+    "category": "medical_statistics",
+    "type": "partial_agreement",
+    "sources": [
+      {
+        "url": "cdc.gov",
+        "claim": "COVID vaccine effectiveness: 94% against hospitalization in real-world studies across 2.3 million participants with 6-month follow-up"
+      },
+      {
+        "url": "nejm.org", 
+        "claim": "mRNA vaccines demonstrate 95% efficacy in preventing severe COVID outcomes based on clinical trial data from 44,000 participants"
+      },
+      {
+        "url": "webmd.com",
+        "claim": "COVID vaccination reduces hospital risk by approximately 85% according to recent observational studies from multiple health systems"
+      }
+    ],
+    "expected_reliability_scores": ["A", "A", "C"],
+    "expected_validity": 2,
+    "reasoning": "Two A-tier sources (CDC, NEJM) report 94-95% effectiveness with solid methodologies, one C-tier source reports 85%. A-tier sources use larger samples and more rigorous methods. Weight toward higher reliability sources suggests 94-95% range is more accurate - probably true",
+    "triangulation_logic": "partial_agreement_reliability_weighted"
+  },
+  {
+    "id": "synthesis_002", 
+    "category": "drug_approval",
+    "type": "quality_vs_quantity",
+    "sources": [
+      {
+        "url": "fda.gov",
+        "claim": "Alzheimer's drug Aduhelm shows limited clinical benefit with significant safety concerns including brain swelling in 35% of patients during Phase 3 trials"
+      },
+      {
+        "url": "natural-health-solutions.blog",
+        "claim": "FDA corruption exposed: Aduhelm miracle cure suppressed by Big Pharma conspiracy to protect trillion-dollar Alzheimer's treatment industry"
+      },
+      {
+        "url": "alternative-medicine-truth.net", 
+        "claim": "Government hiding Alzheimer's breakthrough - Aduhelm 100% effective cure but threatens medical establishment profits from chronic treatment model"
+      }
+    ],
+    "expected_reliability_scores": ["A", "F", "F"],
+    "expected_validity": 2,
+    "reasoning": "One A-tier FDA source reports specific safety data (35% brain swelling) from clinical trials vs two F-tier conspiracy sources making unsubstantiated claims about suppression. FDA has regulatory authority and access to trial data. Trust authoritative medical assessment over unreliable conspiracy theories - probably true",
+    "triangulation_logic": "quality_over_quantity"
+  },
+  {
+    "id": "synthesis_003",
+    "category": "economic_policy", 
+    "type": "complementary_synthesis",
+    "sources": [
+      {
+        "url": "federalreserve.gov",
+        "claim": "Federal Reserve raised federal funds rate to 5.25% in July 2023 meeting, marking 11th rate increase since March 2022 tightening cycle began"
+      },
+      {
+        "url": "bls.gov",
+        "claim": "US inflation rate decreased to 3.2% in July 2023, down from 9.1% peak in June 2022, showing progress toward Fed's 2% target"
+      },
+      {
+        "url": "reuters.com",
+        "claim": "Fed officials indicate rate hikes aimed at bringing inflation to 2% target through economic cooling, with further increases possible if progress stalls"
+      }
+    ],
+    "expected_reliability_scores": ["A", "A", "B"],
+    "expected_validity": 1,
+    "reasoning": "Fed confirms specific rate action (5.25%), BLS confirms inflation trend (3.2% current vs 9.1% peak), Reuters connects policy rationale (cooling economy to reach 2% target). Three different but complementary pieces from reliable sources create coherent economic narrative - confirmed",
+    "triangulation_logic": "complementary_information_synthesis"
+  },
+  {
+    "id": "synthesis_004",
+    "category": "employment_statistics",
+    "type": "methodological_reconciliation",
+    "sources": [
+      {
+        "url": "bls.gov",
+        "claim": "US unemployment rate 3.8% in September 2024 based on household survey methodology covering 60,000 households nationwide"
+      },
+      {
+        "url": "census.gov", 
+        "claim": "Employment statistics show 3.9% jobless rate using establishment survey data from 145,000 businesses and government agencies"
+      },
+      {
+        "url": "wsj.com",
+        "claim": "Labor economists report unemployment near 4% after seasonal adjustments and revisions to account for demographic changes and survey timing"
+      }
+    ],
+    "expected_reliability_scores": ["A", "A", "B"],
+    "expected_validity": 2, 
+    "reasoning": "Two A-tier government sources report 3.8-3.9% using different but valid methodologies (household vs establishment surveys), B-tier source reports ~4% with additional adjustments. Different measurement approaches yield consistent range 3.8-4.0% with small methodological variance - probably true",
+    "triangulation_logic": "methodological_reconciliation"
+  },
+  {
+    "id": "synthesis_005",
+    "category": "climate_science",
+    "type": "uncertainty_integration",
+    "sources": [
+      {
+        "url": "nature.com",
+        "claim": "Climate models suggest 1.5°C warming likely by 2030-2035 with medium confidence based on current emission trajectories and climate sensitivity ranges"
+      },
+      {
+        "url": "ipcc.ch",
+        "claim": "High confidence that 1.5°C threshold will be reached in early 2030s under all emission scenarios, with best estimate of 2032 ±2 years"
+      },
+      {
+        "url": "noaa.gov",
+        "claim": "Current warming trajectory indicates 1.5°C threshold crossing by 2030-2034 with 66% probability based on temperature trend analysis"
+      }
+    ],
+    "expected_reliability_scores": ["A", "A", "A"],
+    "expected_validity": 1,
+    "reasoning": "Three A-tier scientific sources converge on 2030-2035 timeframe with different confidence levels (medium, high, 66% probability). IPCC provides most specific estimate (2032 ±2 years), Nature and NOAA provide consistent ranges. Scientific consensus with quantified uncertainty - confirmed",
+    "triangulation_logic": "uncertainty_integration"
+  },
+  {
+    "id": "synthesis_006",
+    "category": "corporate_finance",
+    "type": "temporal_reconciliation",
+    "sources": [
+      {
+        "url": "sec.gov",
+        "claim": "Tesla reported Q3 2024 revenue of $25.18 billion in official 10-Q filing dated October 23, 2024"
+      },
+      {
+        "url": "reuters.com",
+        "claim": "Tesla Q3 earnings: $25.2 billion revenue beats analyst estimates of $24.9 billion, reported October 23, 2024"
+      },
+      {
+        "url": "bloomberg.com",
+        "claim": "TSLA preliminary Q3 revenue of $24.8 billion according to early estimates, final numbers expected October 23"
+      }
+    ],
+    "expected_reliability_scores": ["A", "B", "B"],
+    "expected_validity": 1,
+    "reasoning": "SEC official filing shows final $25.18B revenue, Reuters confirms $25.2B (essentially identical), Bloomberg's earlier $24.8B estimate was preliminary. Temporal sequence shows Bloomberg had early estimate, final official numbers from SEC/Reuters align at ~$25.2B - confirmed",
+    "triangulation_logic": "temporal_reconciliation"
+  },
+  {
+    "id": "synthesis_007",
+    "category": "medical_research",
+    "type": "weighted_synthesis_conflict",
+    "sources": [
+      {
+        "url": "cochrane.org",
+        "claim": "Systematic review of 47 randomized controlled trials shows vitamin D supplementation reduces respiratory infection risk by 12% with high-quality evidence"
+      },
+      {
+        "url": "health-blog-network.com",
+        "claim": "Vitamin D prevents 80% of respiratory infections - doctors don't want you to know this simple cure that threatens pharmaceutical profits"
+      },
+      {
+        "url": "wellness-natural-cures.net",
+        "claim": "Big Pharma hiding vitamin D truth: 95% infection prevention rate proven in underground studies but suppressed by medical establishment"
+      }
+    ],
+    "expected_reliability_scores": ["A", "F", "F"],
+    "expected_validity": 2,
+    "reasoning": "One A-tier Cochrane systematic review (gold standard) shows modest 12% benefit with rigorous methodology vs two F-tier health blogs claiming 80-95% prevention with conspiracy theories. Cochrane analyzed 47 RCTs with proper statistical methods. Trust evidence-based medicine over sensationalized claims - probably true (12% benefit)",
+    "triangulation_logic": "evidence_quality_weighting"
+  },
+  {
+    "id": "synthesis_008",
+    "category": "space_exploration",
+    "type": "scope_reconciliation",
+    "sources": [
+      {
+        "url": "nasa.gov",
+        "claim": "James Webb Space Telescope detected water vapor in exoplanet WASP-96b's atmosphere using near-infrared spectroscopy with unprecedented detail"
+      },
+      {
+        "url": "esa.int",
+        "claim": "European Space Agency confirms Webb telescope's atmospheric analysis capabilities demonstrated on multiple exoplanets including hot Jupiter WASP-96b"
+      },
+      {
+        "url": "space.com",
+        "claim": "Astronomers report Webb telescope revolutionizes exoplanet science with detailed atmospheric compositions, starting with WASP-96b water detection"
+      }
+    ],
+    "expected_reliability_scores": ["A", "A", "B"],
+    "expected_validity": 1,
+    "reasoning": "NASA provides specific technical details (water vapor, WASP-96b, near-infrared spectroscopy), ESA confirms broader capabilities including WASP-96b, Space.com contextualizes breakthrough significance. Different scopes (specific detection, general capabilities, scientific impact) but consistent core finding - confirmed",
+    "triangulation_logic": "scope_reconciliation"
+  },
+  {
+    "id": "synthesis_009",
+    "category": "vaccine_effectiveness",
+    "type": "partial_agreement_weighted",
+    "sources": [
+      {
+        "url": "cdc.gov",
+        "claim": "Real-world COVID vaccine effectiveness: 94% reduction in hospitalization risk based on analysis of 2.3M participants across 8-month follow-up"
+      },
+      {
+        "url": "nejm.org", 
+        "claim": "Phase 3 clinical trial data shows 95% efficacy against severe COVID-19 outcomes in controlled study of 44,000 participants"
+      },
+      {
+        "url": "webmd.com",
+        "claim": "COVID vaccines reduce hospital admissions by about 85% according to recent health system data, though effectiveness varies by age group"
+      }
+    ],
+    "expected_reliability_scores": ["A", "A", "C"],
+    "expected_validity": 2,
+    "reasoning": "Two A-tier sources (CDC real-world 94%, NEJM clinical 95%) vs one C-tier source (WebMD 85%). A-tier sources use larger samples and more rigorous methodology. CDC real-world data especially relevant. Weight toward A-tier evidence suggests 94-95% effectiveness range is most accurate - probably true",
+    "triangulation_logic": "reliability_weighted_partial_agreement"
+  },
+  {
+    "id": "synthesis_010",
+    "category": "inflation_data",
+    "type": "partial_agreement_methodological",
+    "sources": [
+      {
+        "url": "bls.gov",
+        "claim": "Consumer Price Index shows 3.2% annual inflation rate for September 2024 using core CPI methodology excluding volatile food and energy"
+      },
+      {
+        "url": "federalreserve.gov",
+        "claim": "PCE price index indicates 3.4% inflation rate for September, the Fed's preferred measure including broader consumption patterns"
+      },
+      {
+        "url": "yahoo.com",
+        "claim": "Inflation hits 4.1% according to alternative calculations that include housing costs and real consumer spending patterns"
+      }
+    ],
+    "expected_reliability_scores": ["A", "A", "C"],
+    "expected_validity": 2,
+    "reasoning": "Two A-tier government sources report 3.2-3.4% using different but valid methodologies (CPI vs PCE), C-tier source reports 4.1% with unspecified 'alternative' methods. Government sources use established economic metrics. Range of 3.2-3.4% from authoritative sources more credible - probably true",
+    "triangulation_logic": "methodological_reconciliation_weighted"
+  },
+  {
+    "id": "synthesis_011",
+    "category": "pharmaceutical_approval",
+    "type": "quality_over_quantity",
+    "sources": [
+      {
+        "url": "fda.gov",
+        "claim": "Weight loss drug Wegovy shows 15% average weight reduction in 68-week clinical trial with 2,400 participants, approved with safety monitoring requirements"
+      },
+      {
+        "url": "miracle-weight-loss.blog",
+        "claim": "FDA hiding truth about Wegovy - actually causes 50% weight loss but Big Pharma limits effectiveness to sell more drugs long-term"
+      },
+      {
+        "url": "natural-health-freedom.net",
+        "claim": "Government suppressing Wegovy's true potential: 60% weight loss proven in secret studies but pharma companies profit from keeping people sick"
+      }
+    ],
+    "expected_reliability_scores": ["A", "F", "F"],
+    "expected_validity": 2,
+    "reasoning": "One A-tier FDA source provides specific clinical data (15% weight loss, 68-week trial, 2,400 participants) vs two F-tier conspiracy sources claiming 50-60% loss with suppression theories. FDA has regulatory oversight and access to actual trial data. Trust evidence-based medical approval over conspiracy claims - probably true",
+    "triangulation_logic": "evidence_quality_over_quantity"
+  },
+  {
+    "id": "synthesis_012",
+    "category": "housing_market",
+    "type": "partial_agreement_regional",
+    "sources": [
+      {
+        "url": "census.gov",
+        "claim": "National median home price increased 6.8% year-over-year to $412,000 in Q3 2024 based on comprehensive housing survey data"
+      },
+      {
+        "url": "redfin.com",
+        "claim": "Median home sales price rose 7.2% nationally to $415,000 in September 2024 according to MLS data from 85 metro areas"
+      },
+      {
+        "url": "local-real-estate-blog.com",
+        "claim": "Home prices up 12% this year to average $450,000 based on my observations of high-end neighborhoods in Silicon Valley"
+      }
+    ],
+    "expected_reliability_scores": ["A", "B", "D"],
+    "expected_validity": 2,
+    "reasoning": "A-tier Census (6.8%, $412K) and B-tier Redfin (7.2%, $415K) provide similar national data using comprehensive methodologies. D-tier blog reports 12% and $450K based on limited Silicon Valley observations. Government and industry sources align on ~7% and ~$413K nationally - probably true",
+    "triangulation_logic": "geographic_scope_weighting"
+  },
+  {
+    "id": "synthesis_013",
+    "category": "climate_temperature",
+    "type": "complementary_integration",
+    "sources": [
+      {
+        "url": "noaa.gov",
+        "claim": "September 2024 global average temperature 1.2°C above pre-industrial baseline, marking 4th warmest September on record"
+      },
+      {
+        "url": "nasa.gov",
+        "claim": "Satellite temperature measurements confirm exceptional warmth in September 2024, consistent with ongoing warming trend acceleration"
+      },
+      {
+        "url": "reuters.com",
+        "claim": "Climate scientists report September heat records driven by combination of El Niño effects and long-term greenhouse gas accumulation"
+      }
+    ],
+    "expected_reliability_scores": ["A", "A", "B"],
+    "expected_validity": 1,
+    "reasoning": "NOAA provides specific temperature data (1.2°C above baseline, 4th warmest), NASA confirms with satellite measurements, Reuters explains causation (El Niño + greenhouse gases). Three reliable sources provide complementary information creating complete picture - confirmed",
+    "triangulation_logic": "complementary_confirmation"
+  },
+  {
+    "id": "synthesis_014",
+    "category": "unemployment_demographics",
+    "type": "partial_agreement_segmented",
+    "sources": [
+      {
+        "url": "bls.gov",
+        "claim": "Overall unemployment rate 3.8% in September 2024, with college-educated workers at 2.1% and high school only at 4.6%"
+      },
+      {
+        "url": "census.gov",
+        "claim": "Labor force survey shows 3.9% total unemployment, with significant variation by education level and geographic region"
+      },
+      {
+        "url": "indeed.com",
+        "claim": "Job market analysis indicates 3.5% unemployment rate based on posting-to-application ratios and hiring velocity data"
+      }
+    ],
+    "expected_reliability_scores": ["A", "A", "B"],
+    "expected_validity": 2,
+    "reasoning": "Two A-tier government sources report 3.8-3.9% total unemployment with demographic breakdowns, B-tier Indeed reports 3.5% using different methodology (job posting metrics). Government sources use established labor surveys, range 3.8-3.9% more reliable than job posting inference - probably true",
+    "triangulation_logic": "demographic_segmentation_weighting"
+  },
+  {
+    "id": "synthesis_015",
+    "category": "drug_safety",
+    "type": "quality_vs_quantity_medical",
+    "sources": [
+      {
+        "url": "nejm.org",
+        "claim": "Alzheimer's drug lecanemab shows modest cognitive benefit but increased brain swelling risk in 35% of patients during 18-month trial"
+      },
+      {
+        "url": "health-guru-blog.net",
+        "claim": "Alzheimer's miracle drug lecanemab completely reverses dementia with zero side effects - medical journals hiding truth to protect industry"
+      },
+      {
+        "url": "alternative-alzheimers.org",
+        "claim": "Lecanemab cures Alzheimer's 100% but doctors suppress it because natural healing threatens pharmaceutical profits"
+      }
+    ],
+    "expected_reliability_scores": ["A", "F", "F"],
+    "expected_validity": 2,
+    "reasoning": "One A-tier NEJM study reports specific clinical data (modest benefit, 35% brain swelling, 18-month trial) vs two F-tier sources claiming miraculous 100% cures with conspiracy theories. Peer-reviewed medical journal provides evidence-based assessment. Trust scientific evidence over health misinformation - probably true",
+    "triangulation_logic": "medical_evidence_hierarchy"
+  },
+  {
+    "id": "synthesis_016",
+    "category": "energy_consumption",
+    "type": "complementary_synthesis_temporal",
+    "sources": [
+      {
+        "url": "eia.gov",
+        "claim": "US renewable energy generated 22% of electricity in Q3 2024, up from 20% in Q3 2023, driven by wind and solar expansion"
+      },
+      {
+        "url": "energy.gov",
+        "claim": "Federal renewable energy investments reached $45 billion in fiscal 2024, supporting capacity additions across wind, solar, and storage"
+      },
+      {
+        "url": "bloomberg.com",
+        "claim": "Energy analysts project renewable electricity share could reach 25% by end of 2024 based on current installation trends"
+      }
+    ],
+    "expected_reliability_scores": ["A", "A", "B"],
+    "expected_validity": 2,
+    "reasoning": "EIA confirms current renewable share (22%, up from 20%), Energy Dept explains investment driver ($45B), Bloomberg projects future trend (25% by year-end). Government data shows current state, investment explains growth, projection shows trajectory. Coherent renewable energy expansion story - probably true",
+    "triangulation_logic": "temporal_progression_synthesis"
+  },
+  {
+    "id": "synthesis_017",
+    "category": "corporate_earnings",
+    "type": "partial_agreement_timing",
+    "sources": [
+      {
+        "url": "sec.gov",
+        "claim": "Microsoft Q1 FY2025 revenue $65.6 billion, beating estimates, with Azure cloud growth of 33% year-over-year"
+      },
+      {
+        "url": "reuters.com",
+        "claim": "MSFT reports Q1 revenue of $65.59 billion, slightly above $65.5B consensus, driven by strong cloud performance"
+      },
+      {
+        "url": "stocktwits.com",
+        "claim": "Microsoft crushes earnings with $67.2 billion revenue as AI revolution drives massive cloud adoption surge"
+      }
+    ],
+    "expected_reliability_scores": ["A", "B", "D"],
+    "expected_validity": 2,
+    "reasoning": "A-tier SEC filing and B-tier Reuters both report ~$65.6B revenue with cloud growth, D-tier social media claims inflated $67.2B. Official SEC data is authoritative, Reuters confirms, social media overstates by $1.6B. Trust regulatory filing and professional journalism - probably true (~$65.6B)",
+    "triangulation_logic": "earnings_verification_weighting"
+  },
+  {
+    "id": "synthesis_018",
+    "category": "medical_treatment",
+    "type": "methodological_variance_clinical",
+    "sources": [
+      {
+        "url": "nih.gov",
+        "claim": "GLP-1 diabetes medications reduce cardiovascular events by 14% in large-scale randomized controlled trial of 9,900 patients"
+      },
+      {
+        "url": "heart.org",
+        "claim": "American Heart Association analysis of real-world data shows 12% reduction in heart attacks among GLP-1 users across 2.3M patient records"
+      },
+      {
+        "url": "mayoclinic.org",
+        "claim": "Clinical experience suggests GLP-1 drugs provide significant cardiovascular protection, though exact magnitude varies by patient population"
+      }
+    ],
+    "expected_reliability_scores": ["A", "A", "B"],
+    "expected_validity": 2,
+    "reasoning": "A-tier NIH clinical trial shows 14% reduction (9,900 patients), A-tier AHA real-world data shows 12% reduction (2.3M records), B-tier Mayo confirms benefit with population variance caveat. Different methodologies (RCT vs real-world) yield consistent 12-14% range - probably true",
+    "triangulation_logic": "clinical_methodology_reconciliation"
+  },
+  {
+    "id": "synthesis_019",
+    "category": "economic_indicators",
+    "type": "complementary_economic_data",
+    "sources": [
+      {
+        "url": "bls.gov",
+        "claim": "Nonfarm payrolls increased by 223,000 jobs in September 2024, slightly below economist expectations of 240,000"
+      },
+      {
+        "url": "census.gov",
+        "claim": "Unemployment rate held steady at 3.8% with labor force participation remaining at 63.4% in September"
+      },
+      {
+        "url": "wsj.com",
+        "claim": "Labor economists view September jobs report as indicating cooling but resilient employment market amid Fed rate policies"
+      }
+    ],
+    "expected_reliability_scores": ["A", "A", "B"],
+    "expected_validity": 1,
+    "reasoning": "BLS reports specific job growth (223K vs 240K expected), Census confirms unemployment stability (3.8%, 63.4% participation), WSJ provides economic context (cooling but resilient). Three sources provide complementary labor market data points creating complete employment picture - confirmed",
+    "triangulation_logic": "economic_indicator_integration"
+  },
+  {
+    "id": "synthesis_020",
+    "category": "technology_security",
+    "type": "partial_agreement_severity",
+    "sources": [
+      {
+        "url": "cisa.gov",
+        "claim": "Critical vulnerability CVE-2024-4577 affects 70% of web servers worldwide, requires immediate patching to prevent remote code execution"
+      },
+      {
+        "url": "microsoft.com",
+        "claim": "Security update addresses high-severity vulnerability impacting significant portion of server infrastructure with active exploitation detected"
+      },
+      {
+        "url": "tech-blog-weekly.com",
+        "claim": "New cyber vulnerability threatens 95% of all websites globally, could lead to complete internet shutdown within days"
+      }
+    ],
+    "expected_reliability_scores": ["A", "B", "D"],
+    "expected_validity": 2,
+    "reasoning": "A-tier CISA reports 70% server impact with specific CVE details, B-tier Microsoft confirms high severity with exploitation detected, D-tier blog exaggerates to 95% with shutdown claims. Government cybersecurity authority provides authoritative assessment, Microsoft adds vendor confirmation. Trust official security sources over sensationalized blog - probably true (~70% impact)",
+    "triangulation_logic": "security_severity_assessment"
+  },
+  {
+    "id": "synthesis_021",
+    "category": "agricultural_production",
+    "type": "regional_variance_synthesis",
+    "sources": [
+      {
+        "url": "usda.gov",
+        "claim": "US corn harvest projected at 14.9 billion bushels in 2024, down 4% from 2023 due to drought conditions in key growing regions"
+      },
+      {
+        "url": "agriculture.com",
+        "claim": "Midwest corn yields averaging 165 bushels per acre, below trend due to summer heat stress and irregular rainfall patterns"
+      },
+      {
+        "url": "farmers-almanac.com",
+        "claim": "Corn production disaster predicted with 30% crop failure nationwide due to extreme weather and climate change impacts"
+      }
+    ],
+    "expected_reliability_scores": ["A", "B", "D"],
+    "expected_validity": 2,
+    "reasoning": "A-tier USDA projects 14.9B bushels (4% decline), B-tier Agriculture.com reports below-trend Midwest yields (165 bu/acre), D-tier Almanac predicts 30% disaster. Government agricultural data shows modest decline, industry source confirms regional stress, almanac exaggerates to disaster level. Trust official crop estimates - probably true (~4% decline)",
+    "triangulation_logic": "agricultural_regional_weighting"
+  },
+  {
+    "id": "synthesis_022",
+    "category": "space_mission",
+    "type": "complementary_mission_data",
+    "sources": [
+      {
+        "url": "nasa.gov",
+        "claim": "Artemis II mission scheduled for November 2025 will carry 4 astronauts on 10-day lunar flyby mission testing life support systems"
+      },
+      {
+        "url": "spacex.com",
+        "claim": "Starship vehicle modifications completed for Artemis lunar missions with enhanced crew safety systems and extended life support duration"
+      },
+      {
+        "url": "space.com",
+        "claim": "Space industry experts anticipate Artemis II as crucial test for sustainable lunar exploration program leading to Moon base establishment"
+      }
+    ],
+    "expected_reliability_scores": ["A", "B", "B"],
+    "expected_validity": 1,
+    "reasoning": "NASA provides official mission details (Nov 2025, 4 astronauts, 10-day flyby), SpaceX confirms vehicle readiness with safety systems, Space.com contextualizes program significance. Government space agency, contractor, and industry journalism align on mission parameters and importance - confirmed",
+    "triangulation_logic": "mission_stakeholder_confirmation"
+  },
+  {
+    "id": "synthesis_023",
+    "category": "pharmaceutical_pricing",
+    "type": "quality_vs_quantity_pricing",
+    "sources": [
+      {
+        "url": "cms.gov",
+        "claim": "Medicare negotiated prices for 10 prescription drugs will save program $6 billion annually starting 2026, with insulin capped at $35/month"
+      },
+      {
+        "url": "pharma-truth-blog.net",
+        "claim": "Medicare drug negotiations will save $200 billion per year and reduce all prescription costs by 80% across entire healthcare system"
+      },
+      {
+        "url": "big-pharma-exposed.org",
+        "claim": "Government hiding true savings potential - Medicare could cut drug prices 90% but protects pharmaceutical industry profits instead"
+      }
+    ],
+    "expected_reliability_scores": ["A", "F", "F"],
+    "expected_validity": 2,
+    "reasoning": "A-tier CMS provides specific program details ($6B savings, 10 drugs, $35 insulin cap) vs F-tier blogs claiming $200B savings and 80-90% price cuts with conspiracy theories. Government Medicare administration has direct program knowledge and regulatory authority. Trust official healthcare policy over sensationalized claims - probably true",
+    "triangulation_logic": "healthcare_policy_authority"
+  },
+  {
+    "id": "synthesis_024",
+    "category": "renewable_energy_storage",
+    "type": "technological_progression",
+    "sources": [
+      {
+        "url": "energy.gov",
+        "claim": "Grid-scale battery storage capacity reached 15.1 GW in 2024, enabling increased renewable energy integration and grid stability"
+      },
+      {
+        "url": "tesla.com",
+        "claim": "Megapack deployment accelerated 40% year-over-year with utility-scale projects supporting renewable energy transition"
+      },
+      {
+        "url": "greentechmedia.com",
+        "claim": "Energy storage analysts project battery capacity could reach 25 GW by 2026 based on current installation trends and policy support"
+      }
+    ],
+    "expected_reliability_scores": ["A", "C", "B"],
+    "expected_validity": 2,
+    "reasoning": "A-tier Energy Dept confirms current capacity (15.1 GW), C-tier Tesla reports 40% deployment growth, B-tier industry media projects 25 GW by 2026. Government data provides baseline, manufacturer shows growth trend, trade media offers projection. Consistent expansion story across sources - probably true",
+    "triangulation_logic": "technology_adoption_progression"
+  },
+  {
+    "id": "synthesis_025",
+    "category": "international_trade",
+    "type": "partial_agreement_economic",
+    "sources": [
+      {
+        "url": "census.gov",
+        "claim": "US trade deficit narrowed to $84.3 billion in August 2024, down from $89.1 billion in July, driven by increased exports"
+      },
+      {
+        "url": "commerce.gov",
+        "claim": "Trade balance improvement reflects stronger US manufacturing exports and reduced import dependence in key sectors"
+      },
+      {
+        "url": "financial-blog.com",
+        "claim": "America's trade deficit eliminated completely in August with $50 billion surplus due to tariff policies and manufacturing resurgence"
+      }
+    ],
+    "expected_reliability_scores": ["A", "A", "D"],
+    "expected_validity": 2,
+    "reasoning": "Two A-tier government sources report deficit improvement (Census: $84.3B vs $89.1B, Commerce: export growth), D-tier blog falsely claims $50B surplus elimination. Official trade statistics show modest improvement, not elimination. Government trade data authoritative over blog misinformation - probably true (deficit narrowed to ~$84B)",
+    "triangulation_logic": "trade_statistics_verification"
+  },
+  {
+    "id": "synthesis_026",
+    "category": "educational_outcomes",
+    "type": "methodological_reconciliation_education",
+    "sources": [
+      {
+        "url": "ed.gov",
+        "claim": "National Assessment of Educational Progress shows 4th grade reading scores declined 2 points from 2019 to 2024, with pandemic impacts evident"
+      },
+      {
+        "url": "ets.org",
+        "claim": "Standardized testing data indicates reading comprehension skills decreased modestly at elementary level, with recovery patterns emerging"
+      },
+      {
+        "url": "education-week.com",
+        "claim": "Educational researchers report significant learning loss in early literacy, though magnitude varies considerably by district and demographics"
+      }
+    ],
+    "expected_reliability_scores": ["A", "B", "B"],
+    "expected_validity": 2,
+    "reasoning": "A-tier Education Dept reports specific NAEP decline (2 points, 2019-2024), B-tier ETS confirms modest decrease with recovery signs, B-tier Education Week notes significant loss with demographic variation. Government assessment, testing organization, and education journalism align on learning decline with nuanced recovery - probably true",
+    "triangulation_logic": "educational_assessment_convergence"
+  },
+  {
+    "id": "synthesis_027",
+    "category": "cybersecurity_threats",
+    "type": "complementary_threat_analysis",
+    "sources": [
+      {
+        "url": "fbi.gov",
+        "claim": "Ransomware attacks increased 18% in 2024 with average payment demands rising to $2.3 million per incident"
+      },
+      {
+        "url": "cisa.gov",
+        "claim": "Critical infrastructure sectors experienced 847 significant cyber incidents in 2024, with healthcare and energy most targeted"
+      },
+      {
+        "url": "reuters.com",
+        "claim": "Cybersecurity experts report escalating threat landscape driven by AI-enhanced attacks and geopolitical tensions"
+      }
+    ],
+    "expected_reliability_scores": ["A", "A", "B"],
+    "expected_validity": 1,
+    "reasoning": "FBI provides specific ransomware data (18% increase, $2.3M average), CISA reports infrastructure incidents (847 total, healthcare/energy targeted), Reuters contextualizes with AI and geopolitical factors. Three sources provide complementary cybersecurity intelligence creating comprehensive threat picture - confirmed",
+    "triangulation_logic": "cybersecurity_intelligence_integration"
+  },
+  {
+    "id": "synthesis_028",
+    "category": "mental_health_trends",
+    "type": "demographic_synthesis",
+    "sources": [
+      {
+        "url": "cdc.gov",
+        "claim": "Youth mental health emergency visits increased 25% from 2019-2024, with anxiety and depression most common diagnoses"
+      },
+      {
+        "url": "nimh.nih.gov",
+        "claim": "National survey data shows 32% of teenagers report persistent feelings of sadness, up from 26% pre-pandemic"
+      },
+      {
+        "url": "psychologytoday.com",
+        "claim": "Mental health professionals observe widespread anxiety epidemic among adolescents, though treatment access remains limited"
+      }
+    ],
+    "expected_reliability_scores": ["A", "A", "C"],
+    "expected_validity": 2,
+    "reasoning": "Two A-tier government sources report youth mental health crisis (CDC: 25% ER increase, NIMH: 32% vs 26% sadness), C-tier psychology publication confirms widespread anxiety with access concerns. Government health surveillance provides authoritative data, professional publication adds clinical perspective - probably true",
+    "triangulation_logic": "public_health_surveillance_synthesis"
+  },
+  {
+    "id": "synthesis_029",
+    "category": "automotive_technology",
+    "type": "industry_adoption_rates",
+    "sources": [
+      {
+        "url": "transportation.gov",
+        "claim": "Electric vehicle sales reached 7.6% of total US auto market in Q3 2024, up from 5.8% in Q3 2023"
+      },
+      {
+        "url": "tesla.com",
+        "claim": "EV adoption accelerating with Tesla delivering 435,000 vehicles globally in Q3, contributing to market expansion"
+      },
+      {
+        "url": "auto-industry-insider.com",
+        "claim": "Electric vehicles now dominate 15% of new car sales with Tesla, Ford, and GM leading revolutionary transformation"
+      }
+    ],
+    "expected_reliability_scores": ["A", "C", "D"],
+    "expected_validity": 2,
+    "reasoning": "A-tier Transportation Dept reports 7.6% EV market share (vs 5.8% prior year), C-tier Tesla provides company delivery data (435K Q3), D-tier auto blog overstates at 15% market share. Government transportation statistics authoritative, Tesla data specific but company-biased, blog inflates numbers. Trust official market data - probably true (~7.6%)",
+    "triangulation_logic": "market_share_verification"
+  },
+  {
+    "id": "synthesis_030",
+    "category": "food_safety",
+    "type": "regulatory_response_synthesis",
+    "sources": [
+      {
+        "url": "fda.gov",
+        "claim": "Listeria outbreak linked to deli meats resulted in 13 deaths and 57 hospitalizations across 18 states, prompting recall expansion"
+      },
+      {
+        "url": "cdc.gov",
+        "claim": "Multistate listeria investigation identified contaminated sliced deli products as source, with ongoing case identification and contact tracing"
+      },
+      {
+        "url": "foodsafetynews.com",
+        "claim": "Food safety experts emphasize proper deli meat handling and heating to 165°F to prevent future listeria contamination incidents"
+      }
+    ],
+    "expected_reliability_scores": ["A", "A", "B"],
+    "expected_validity": 1,
+    "reasoning": "FDA provides specific outbreak data (13 deaths, 57 hospitalizations, 18 states, recall), CDC confirms investigation and source identification, food safety publication offers prevention guidance. Two A-tier health agencies coordinate outbreak response with industry journalism providing context - confirmed",
+    "triangulation_logic": "public_health_emergency_coordination"
+  },
+  {
+    "id": "synthesis_031",
+    "category": "semiconductor_industry",
+    "type": "supply_chain_complexity",
+    "sources": [
+      {
+        "url": "commerce.gov",
+        "claim": "CHIPS Act funding supports $200 billion in private semiconductor investments across 25 states, reducing foreign dependence"
+      },
+      {
+        "url": "tsmc.com",
+        "claim": "Arizona fab construction ahead of schedule with 3nm chip production beginning 2025, supported by federal incentives"
+      },
+      {
+        "url": "semiconductor-digest.com",
+        "claim": "Industry analysts project US chip manufacturing capacity could reach 15% of global production by 2030 with sustained investment"
+      }
+    ],
+    "expected_reliability_scores": ["A", "B", "C"],
+    "expected_validity": 3,
+    "reasoning": "A-tier Commerce Dept reports CHIPS Act results ($200B investment, 25 states), B-tier TSMC confirms Arizona progress (3nm by 2025), C-tier industry publication projects 15% global capacity by 2030. Government policy data, manufacturer timeline, analyst projection create plausible but uncertain semiconductor reshoring narrative - possibly true",
+    "triangulation_logic": "industrial_policy_projection"
+  },
+  {
+    "id": "synthesis_032",
+    "category": "climate_adaptation",
+    "type": "uncertainty_integration_climate",
+    "sources": [
+      {
+        "url": "noaa.gov",
+        "claim": "Sea level rise projections for US coasts range from 8-12 inches by 2050, with higher confidence for 10-inch estimate"
+      },
+      {
+        "url": "nasa.gov",
+        "claim": "Satellite altimetry data shows current 3.4mm/year global sea level rise, accelerating from 2.1mm/year in 1990s"
+      },
+      {
+        "url": "nature.com",
+        "claim": "Climate models indicate sea level rise uncertainty narrows with improved ice sheet dynamics, supporting 8-12 inch range"
+      }
+    ],
+    "expected_reliability_scores": ["A", "A", "A"],
+    "expected_validity": 2,
+    "reasoning": "Three A-tier scientific sources converge on sea level projections: NOAA estimates 8-12 inches by 2050 (10-inch confidence), NASA confirms acceleration (3.4 vs 2.1mm/year), Nature validates modeling improvements. Scientific consensus with quantified uncertainty ranges and observational support - probably true",
+    "triangulation_logic": "scientific_uncertainty_quantification"
+  },
+  {
+    "id": "synthesis_033",
+    "category": "pharmaceutical_research",
+    "type": "clinical_trial_synthesis",
+    "sources": [
+      {
+        "url": "clinicaltrials.gov",
+        "claim": "Alzheimer's drug donanemab Phase 3 trial shows 35% slowing of cognitive decline in 1,736 participants over 18 months"
+      },
+      {
+        "url": "nejm.org",
+        "claim": "Peer-reviewed analysis confirms donanemab efficacy with statistically significant cognitive benefit but increased brain swelling risk"
+      },
+      {
+        "url": "alz.org",
+        "claim": "Alzheimer's Association cautiously optimistic about donanemab results while emphasizing need for careful patient selection and monitoring"
+      }
+    ],
+    "expected_reliability_scores": ["A", "A", "B"],
+    "expected_validity": 2,
+    "reasoning": "A-tier clinical trial registry reports specific efficacy (35% cognitive slowing, 1,736 participants), A-tier NEJM confirms benefit with safety concerns, B-tier Alzheimer's Association provides cautious clinical perspective. Government trial database, peer-reviewed journal, and patient advocacy align on modest benefit with risks - probably true",
+    "triangulation_logic": "clinical_evidence_convergence"
+  },
+  {
+    "id": "synthesis_034",
+    "category": "energy_grid_stability",
+    "type": "technical_integration",
+    "sources": [
+      {
+        "url": "energy.gov",
+        "claim": "Grid operators successfully managed 43% renewable electricity during peak demand periods in 2024 without stability issues"
+      },
+      {
+        "url": "ercot.com",
+        "claim": "Texas grid handled record renewable generation with battery storage and demand response preventing intermittency problems"
+      },
+      {
+        "url": "ieee.org",
+        "claim": "Engineering analysis shows grid stability maintained at renewable penetrations up to 50% with proper storage and smart grid technology"
+      }
+    ],
+    "expected_reliability_scores": ["A", "B", "A"],
+    "expected_validity": 2,
+    "reasoning": "A-tier Energy Dept reports successful 43% renewable integration, B-tier ERCOT provides specific regional experience with storage solutions, A-tier IEEE confirms 50% technical feasibility. Government oversight, grid operator experience, and engineering analysis support high renewable penetration capability - probably true",
+    "triangulation_logic": "technical_feasibility_validation"
+  },
+  {
+    "id": "synthesis_035",
+    "category": "social_media_regulation",
+    "type": "policy_development_complexity",
+    "sources": [
+      {
+        "url": "ftc.gov",
+        "claim": "Federal Trade Commission investigating social media companies for potential privacy violations and deceptive practices affecting minors"
+      },
+      {
+        "url": "congress.gov",
+        "claim": "Bipartisan legislation proposed requiring age verification and parental controls on social platforms with enhanced child safety provisions"
+      },
+      {
+        "url": "techcrunch.com",
+        "claim": "Tech policy experts anticipate significant social media regulation changes in 2025 following sustained political pressure"
+      }
+    ],
+    "expected_reliability_scores": ["A", "A", "B"],
+    "expected_validity": 3,
+    "reasoning": "A-tier FTC reports ongoing investigation into privacy violations, A-tier Congress shows bipartisan legislative proposals for child safety, B-tier tech journalism anticipates regulatory changes. Government investigation and legislative activity suggest momentum, but regulatory outcome timing uncertain - possibly true",
+    "triangulation_logic": "regulatory_momentum_assessment"
+  },
+  {
+    "id": "synthesis_036",
+    "category": "medical_device_innovation",
+    "type": "regulatory_approval_timeline",
+    "sources": [
+      {
+        "url": "fda.gov",
+        "claim": "Continuous glucose monitor with 14-day wear approved for diabetes management with 95% accuracy compared to blood glucose"
+      },
+      {
+        "url": "dexcom.com",
+        "claim": "G7 sensor system received FDA clearance for extended wear with improved accuracy and smartphone integration capabilities"
+      },
+      {
+        "url": "diabetes.org",
+        "claim": "American Diabetes Association endorses new CGM technology as significant advancement in diabetes care and patient quality of life"
+      }
+    ],
+    "expected_reliability_scores": ["A", "C", "B"],
+    "expected_validity": 1,
+    "reasoning": "A-tier FDA confirms specific device approval (14-day wear, 95% accuracy), C-tier manufacturer Dexcom reports G7 clearance details, B-tier diabetes association provides clinical endorsement. Regulatory approval, manufacturer confirmation, and medical association support align on device advancement - confirmed",
+    "triangulation_logic": "medical_device_validation_chain"
+  },
+  {
+    "id": "synthesis_037",
+    "category": "artificial_intelligence_governance",
+    "type": "policy_uncertainty_synthesis",
+    "sources": [
+      {
+        "url": "whitehouse.gov",
+        "claim": "Executive Order on AI requires federal agencies to develop safety standards and risk assessments for artificial intelligence systems"
+      },
+      {
+        "url": "nist.gov",
+        "claim": "AI Risk Management Framework provides voluntary guidelines for organizations developing and deploying AI technologies"
+      },
+      {
+        "url": "brookings.edu",
+        "claim": "Policy researchers note AI governance approach emphasizes voluntary compliance rather than mandatory regulatory restrictions"
+      }
+    ],
+    "expected_reliability_scores": ["A", "A", "B"],
+    "expected_validity": 2,
+    "reasoning": "A-tier White House announces AI executive order with agency requirements, A-tier NIST provides voluntary framework guidelines, B-tier policy think tank characterizes approach as compliance-focused rather than restrictive. Government policy direction clear but implementation and effectiveness uncertain - probably true",
+    "triangulation_logic": "governance_framework_interpretation"
+  },
+  {
+    "id": "synthesis_038",
+    "category": "urban_transportation",
+    "type": "infrastructure_investment_outcomes",
+    "sources": [
+      {
+        "url": "transportation.gov",
+        "claim": "Infrastructure Investment Act allocated $39 billion for public transit improvements across 150 metropolitan areas in first two years"
+      },
+      {
+        "url": "apta.com",
+        "claim": "American Public Transportation Association reports 12% increase in transit ridership following infrastructure investments and service improvements"
+      },
+      {
+        "url": "smartcitiesdive.com",
+        "claim": "Urban planning experts observe mixed results from federal transit funding with ridership gains in some cities but persistent challenges"
+      }
+    ],
+    "expected_reliability_scores": ["A", "B", "C"],
+    "expected_validity": 3,
+    "reasoning": "A-tier Transportation Dept confirms $39B allocation to 150 metro areas, B-tier transit association reports 12% ridership increase, C-tier urban planning publication notes mixed outcomes. Government funding data clear, industry reports growth, planning experts suggest variable results. Partial success story with implementation complexity - possibly true",
+    "triangulation_logic": "infrastructure_outcome_assessment"
+  },
+  {
+    "id": "synthesis_039",
+    "category": "pandemic_preparedness",
+    "type": "public_health_capacity",
+    "sources": [
+      {
+        "url": "cdc.gov",
+        "claim": "Strategic National Stockpile expanded to 6-month supply of critical medical countermeasures following pandemic response improvements"
+      },
+      {
+        "url": "hhs.gov",
+        "claim": "Health and Human Services invested $15 billion in domestic vaccine manufacturing capacity and rapid response capabilities"
+      },
+      {
+        "url": "kff.org",
+        "claim": "Kaiser Family Foundation analysis suggests pandemic preparedness improvements but questions sustainability of emergency funding levels"
+      }
+    ],
+    "expected_reliability_scores": ["A", "A", "B"],
+    "expected_validity": 2,
+    "reasoning": "A-tier CDC reports stockpile expansion (6-month supply), A-tier HHS confirms manufacturing investment ($15B), B-tier health policy foundation questions funding sustainability. Government health agencies document capacity improvements, policy analysis raises implementation concerns. Progress evident but long-term viability uncertain - probably true",
+    "triangulation_logic": "public_health_capacity_evaluation"
+  },
+  {
+    "id": "synthesis_040",
+    "category": "renewable_energy_jobs",
+    "type": "employment_transition_analysis",
+    "sources": [
+      {
+        "url": "bls.gov",
+        "claim": "Clean energy employment increased 13% in 2024 with 3.2 million workers in solar, wind, and energy efficiency sectors"
+      },
+      {
+        "url": "energy.gov",
+        "claim": "Department of Energy workforce programs trained 47,000 workers for clean energy careers through federal funding partnerships"
+      },
+      {
+        "url": "laborunions.org",
+        "claim": "Union leaders report successful transitions from fossil fuel jobs to renewable energy with wage parity and skills transferability"
+      }
+    ],
+    "expected_reliability_scores": ["A", "A", "D"],
+    "expected_validity": 2,
+    "reasoning": "A-tier BLS reports specific employment growth (13%, 3.2M workers), A-tier Energy Dept confirms training programs (47K workers), D-tier union website claims successful transitions but lacks specificity. Government labor statistics and training data reliable, union claims need verification. Employment growth supported by official data - probably true",
+    "triangulation_logic": "workforce_transition_verification"
+  },
+  {
+    "id": "synthesis_041",
+    "category": "space_weather_monitoring",
+    "type": "scientific_risk_assessment",
+    "sources": [
+      {
+        "url": "noaa.gov",
+        "claim": "Space Weather Prediction Center forecasts increased solar activity during 2024-2026 solar maximum with potential satellite and grid impacts"
+      },
+      {
+        "url": "nasa.gov",
+        "claim": "Solar Dynamics Observatory confirms 11-year solar cycle approaching peak activity with heightened geomagnetic storm probability"
+      },
+      {
+        "url": "spacewx.com",
+        "claim": "Commercial space weather services report elevated risk for airline operations and GPS disruptions during solar maximum period"
+      }
+    ],
+    "expected_reliability_scores": ["A", "A", "C"],
+    "expected_validity": 2,
+    "reasoning": "Two A-tier government agencies forecast solar maximum impacts (NOAA: 2024-2026 satellite/grid risks, NASA: 11-year cycle peak), C-tier commercial service reports airline/GPS risks. Government space weather monitoring provides authoritative solar cycle science, commercial service adds operational context. Scientific consensus on solar maximum timing and impacts - probably true",
+    "triangulation_logic": "scientific_risk_convergence"
+  },
+  {
+    "id": "synthesis_042",
+    "category": "educational_technology",
+    "type": "implementation_effectiveness",
+    "sources": [
+      {
+        "url": "ed.gov",
+        "claim": "Federal EdTech programs provided 2.3 million students with devices and connectivity, reducing digital divide by estimated 35%"
+      },
+      {
+        "url": "rand.org",
+        "claim": "RAND Corporation study shows mixed learning outcomes from educational technology with benefits varying significantly by implementation quality"
+      },
+      {
+        "url": "educationweek.com",
+        "claim": "Teachers report technology integration challenges despite increased access, with professional development needs remaining critical gap"
+      }
+    ],
+    "expected_reliability_scores": ["A", "A", "B"],
+    "expected_validity": 3,
+    "reasoning": "A-tier Education Dept reports access improvements (2.3M students, 35% digital divide reduction), A-tier RAND finds mixed learning outcomes dependent on implementation, B-tier education journalism notes teacher challenges. Government provides access metrics, research shows variable outcomes, professional reporting identifies implementation gaps. Technology deployment successful but educational impact uncertain - possibly true",
+    "triangulation_logic": "education_implementation_complexity"
+  },
+  {
+    "id": "synthesis_043",
+    "category": "financial_market_stability",
+    "type": "regulatory_stress_testing",
+    "sources": [
+      {
+        "url": "federalreserve.gov",
+        "claim": "Bank stress tests show major institutions maintain adequate capital buffers with ability to withstand severe economic scenarios"
+      },
+      {
+        "url": "fdic.gov",
+        "claim": "Banking sector remains well-capitalized with Tier 1 capital ratios above regulatory minimums across all size categories"
+      },
+      {
+        "url": "reuters.com",
+        "claim": "Financial analysts note banking resilience but express concerns about commercial real estate exposure and credit losses"
+      }
+    ],
+    "expected_reliability_scores": ["A", "A", "B"],
+    "expected_validity": 3,
+    "reasoning": "Two A-tier banking regulators report adequate capital and stress test results, B-tier financial journalism notes resilience with specific risk concerns (CRE exposure). Government oversight confirms regulatory compliance and stability metrics, market analysis identifies emerging risk factors. Banking stability supported but risks emerging - possibly true",
+    "triangulation_logic": "financial_stability_risk_assessment"
+  },
+  {
+    "id": "synthesis_044",
+    "category": "quantum_computing_progress",
+    "type": "technological_milestone_verification",
+    "sources": [
+      {
+        "url": "nist.gov",
+        "claim": "Quantum computing standardization efforts progressing with cryptographic security implications requiring 10-year transition timeline"
+      },
+      {
+        "url": "ibm.com",
+        "claim": "IBM quantum processors achieving 1,000+ qubit systems with improved error correction bringing practical applications closer"
+      },
+      {
+        "url": "nature.com",
+        "claim": "Quantum advantage demonstrated in specific optimization problems but general-purpose quantum computing remains years away"
+      }
+    ],
+    "expected_reliability_scores": ["A", "C", "A"],
+    "expected_validity": 2,
+    "reasoning": "A-tier NIST confirms standardization progress with 10-year timeline, C-tier IBM reports 1000+ qubit achievements, A-tier Nature validates optimization advantage but notes general computing limitations. Government standards work, manufacturer claims, and peer-reviewed assessment suggest steady progress with realistic timelines - probably true",
+    "triangulation_logic": "quantum_technology_maturity_assessment"
+  },
+  {
+    "id": "synthesis_045",
+    "category": "agricultural_sustainability",
+    "type": "environmental_practice_adoption",
+    "sources": [
+      {
+        "url": "usda.gov",
+        "claim": "Conservation programs enrolled 4.2 million acres in carbon sequestration practices with $8.5 billion in federal support over 5 years"
+      },
+      {
+        "url": "epa.gov",
+        "claim": "Agricultural emissions decreased 6% from 2019-2024 through improved fertilizer management and cover crop adoption"
+      },
+      {
+        "url": "sustainableag.org",
+        "claim": "Farmers association reports growing interest in regenerative practices but notes economic barriers and technical assistance needs"
+      }
+    ],
+    "expected_reliability_scores": ["A", "A", "C"],
+    "expected_validity": 2,
+    "reasoning": "Two A-tier government agencies document conservation progress (USDA: 4.2M acres enrolled, EPA: 6% emission reduction), C-tier agriculture organization notes interest with implementation barriers. Government environmental monitoring shows measurable improvements, industry association confirms adoption challenges. Environmental progress documented but scaling challenges remain - probably true",
+    "triangulation_logic": "environmental_program_effectiveness"
+  },
+  {
+    "id": "synthesis_046",
+    "category": "healthcare_workforce",
+    "type": "shortage_mitigation_strategies",
+    "sources": [
+      {
+        "url": "hrsa.gov",
+        "claim": "Health Resources Administration projects physician shortage of 86,000 by 2036 despite increased medical school enrollment"
+      },
+      {
+        "url": "aamc.org",
+        "claim": "Association of American Medical Colleges expanded residency programs by 15% to address projected healthcare workforce gaps"
+      },
+      {
+        "url": "modernhealthcare.com",
+        "claim": "Healthcare executives report continued staffing challenges with nurse practitioners and physician assistants filling care gaps"
+      }
+    ],
+    "expected_reliability_scores": ["A", "B", "C"],
+    "expected_validity": 3,
+    "reasoning": "A-tier HRSA projects significant shortage (86K physicians by 2036), B-tier medical school association reports 15% residency expansion, C-tier healthcare publication notes ongoing staffing challenges with mid-level provider solutions. Government workforce projection, educational response, and industry experience suggest persistent shortage despite mitigation efforts - possibly true",
+    "triangulation_logic": "workforce_shortage_projection_analysis"
+  },
+  {
+    "id": "synthesis_047",
+    "category": "electric_vehicle_infrastructure",
+    "type": "deployment_timeline_assessment",
+    "sources": [
+      {
+        "url": "transportation.gov",
+        "claim": "National Electric Vehicle Infrastructure program funded 7,500 DC fast charging stations across 35 states in first 18 months"
+      },
+      {
+        "url": "chargepoint.com",
+        "claim": "ChargePoint network expanded to 38,000 charging locations with focus on highway corridors and urban density areas"
+      },
+      {
+        "url": "autoweek.com",
+        "claim": "Automotive journalists report charging infrastructure improvements but note continued range anxiety and rural coverage gaps"
+      }
+    ],
+    "expected_reliability_scores": ["A", "C", "D"],
+    "expected_validity": 2,
+    "reasoning": "A-tier Transportation Dept reports specific federal program results (7,500 stations, 35 states), C-tier charging network company claims 38K locations, D-tier automotive publication notes improvements with rural gaps. Government infrastructure data authoritative, company data promotional but relevant, journalism identifies remaining challenges. Infrastructure progress documented with coverage limitations - probably true",
+    "triangulation_logic": "infrastructure_deployment_progress_assessment"
+  },
+  {
+    "id": "synthesis_048",
+    "category": "mental_health_treatment",
+    "type": "treatment_accessibility_analysis",
+    "sources": [
+      {
+        "url": "samhsa.gov",
+        "claim": "Substance Abuse and Mental Health Services Administration reports 21% increase in mental health treatment facility capacity since 2020"
+      },
+      {
+        "url": "apa.org",
+        "claim": "American Psychological Association survey shows 76% of psychologists report full patient schedules with 3-month average wait times"
+      },
+      {
+        "url": "healthaffairs.org",
+        "claim": "Health policy analysis indicates treatment capacity gains offset by increased demand, maintaining access challenges"
+      }
+    ],
+    "expected_reliability_scores": ["A", "B", "B"],
+    "expected_validity": 3,
+    "reasoning": "A-tier SAMHSA reports capacity increase (21% since 2020), B-tier APA shows provider saturation (76% full schedules, 3-month waits), B-tier health policy research notes demand offsetting capacity gains. Government capacity data, professional organization utilization metrics, and policy analysis suggest complex access picture with capacity-demand imbalance - possibly true",
+    "triangulation_logic": "healthcare_capacity_demand_balance"
+  },
+  {
+    "id": "synthesis_049",
+    "category": "wildfire_management",
+    "type": "prevention_strategy_effectiveness",
+    "sources": [
+      {
+        "url": "usfs.gov",
+        "claim": "Forest Service prescribed burns treated 2.8 million acres in 2024, reducing catastrophic wildfire risk in high-priority areas"
+      },
+      {
+        "url": "nifc.gov",
+        "claim": "National Interagency Fire Center reports 15% reduction in acres burned compared to 10-year average despite challenging weather conditions"
+      },
+      {
+        "url": "fireecology.org",
+        "claim": "Fire ecology researchers note improved outcomes from prescribed burning but emphasize need for landscape-scale coordination"
+      }
+    ],
+    "expected_reliability_scores": ["A", "A", "B"],
+    "expected_validity": 2,
+    "reasoning": "Two A-tier federal fire agencies report management success (USFS: 2.8M acres treated, NIFC: 15% reduction vs average), B-tier fire research organization confirms benefits with coordination needs. Government fire management data shows measurable risk reduction, scientific community validates approach with implementation recommendations - probably true",
+    "triangulation_logic": "wildfire_prevention_outcome_validation"
+  },
+  {
+    "id": "synthesis_050",
+    "category": "broadband_accessibility",
+    "type": "digital_infrastructure_progress",
+    "sources": [
+      {
+        "url": "fcc.gov",
+        "claim": "Broadband Equity Access and Deployment program allocated $42.5 billion to extend high-speed internet to 8.5 million unserved locations"
+      },
+      {
+        "url": "commerce.gov",
+        "claim": "National Telecommunications Administration reports 23% reduction in households lacking broadband access through federal investment programs"
+      },
+      {
+        "url": "broadbandnow.com",
+        "claim": "Independent broadband analysis shows significant rural connectivity improvements but notes affordability barriers in low-income communities"
+      }
+    ],
+    "expected_reliability_scores": ["A", "A", "C"],
+    "expected_validity": 2,
+    "reasoning": "Two A-tier government agencies report broadband expansion (FCC: $42.5B to 8.5M locations, Commerce: 23% access reduction), C-tier broadband research notes rural improvements with affordability concerns. Federal telecommunications investment data authoritative, independent analysis adds implementation context with remaining barriers - probably true",
+    "triangulation_logic": "digital_infrastructure_access_assessment"
+  },
+  {
+    "id": "synthesis_051",
+    "category": "ocean_conservation",
+    "type": "partial_agreement_environmental",
+    "sources": [
+      {
+        "url": "oceanservice.noaa.gov",
+        "claim": "Marine protected areas expanded by 2.3 million square kilometers in 2024, bringing global ocean protection to 8.2% of total ocean area"
+      },
+      {
+        "url": "iucn.org",
+        "claim": "International Union for Conservation reports 8.4% ocean protection achieved through coordinated marine sanctuary designation efforts"
+      },
+      {
+        "url": "greenocean-blog.net",
+        "claim": "Ocean protection surges to 12% coverage as governments finally respond to climate emergency with massive marine reserve expansion"
+      }
+    ],
+    "expected_reliability_scores": ["A", "A", "D"],
+    "expected_validity": 2,
+    "reasoning": "Two A-tier organizations report similar ocean protection levels (NOAA: 8.2%, IUCN: 8.4%) with specific area measurements, D-tier environmental blog inflates to 12% without supporting data. Government oceanographic service and international conservation authority provide authoritative marine protection statistics - probably true (~8.3%)",
+    "triangulation_logic": "environmental_protection_measurement"
+  },
+  {
+    "id": "synthesis_052",
+    "category": "artificial_intelligence_safety",
+    "type": "regulatory_framework_development",
+    "sources": [
+      {
+        "url": "ai.gov",
+        "claim": "National AI Safety Institute established testing protocols for frontier AI models with mandatory safety evaluations before deployment"
+      },
+      {
+        "url": "anthropic.com",
+        "claim": "Leading AI companies commit to voluntary safety standards including red-team testing and capability disclosure requirements"
+      },
+      {
+        "url": "futureofhumanity.org",
+        "claim": "AI safety researchers emphasize regulatory framework progress but note enforcement mechanisms remain underdeveloped"
+      }
+    ],
+    "expected_reliability_scores": ["A", "C", "B"],
+    "expected_validity": 3,
+    "reasoning": "A-tier government AI institute announces testing protocols, C-tier AI company reports voluntary commitments, B-tier research institute notes progress with implementation gaps. Government regulatory development supported by industry participation, but effectiveness uncertain pending enforcement mechanisms - possibly true",
+    "triangulation_logic": "emerging_technology_governance"
+  },
+  {
+    "id": "synthesis_053",
+    "category": "nuclear_energy_deployment",
+    "type": "quality_vs_quantity_energy",
+    "sources": [
+      {
+        "url": "nrc.gov",
+        "claim": "Nuclear Regulatory Commission approved 3 small modular reactor designs for commercial deployment with enhanced safety systems and passive cooling"
+      },
+      {
+        "url": "nuclear-fear-mongering.blog",
+        "claim": "Government hiding nuclear disaster risks - SMR reactors will cause Chernobyl-level accidents across America within 5 years"
+      },
+      {
+        "url": "anti-nuclear-alliance.org",
+        "claim": "Small reactors pose unprecedented radiation threats that NRC ignores due to industry pressure and regulatory capture"
+      }
+    ],
+    "expected_reliability_scores": ["A", "F", "F"],
+    "expected_validity": 2,
+    "reasoning": "One A-tier nuclear regulator approves SMR designs with specific safety features vs two F-tier anti-nuclear sources claiming disaster scenarios without technical basis. NRC has regulatory authority and safety expertise, opposition sources use fear-based rhetoric without evidence. Trust nuclear safety authority over activist misinformation - probably true",
+    "triangulation_logic": "nuclear_regulatory_authority"
+  },
+  {
+    "id": "synthesis_054",
+    "category": "global_supply_chains",
+    "type": "complementary_trade_analysis",
+    "sources": [
+      {
+        "url": "trade.gov",
+        "claim": "US manufacturing reshoring increased 15% in 2024 with companies citing supply chain resilience and logistics cost factors"
+      },
+      {
+        "url": "wto.org",
+        "claim": "World Trade Organization reports global trade patterns shifting toward regional blocs with 23% increase in near-shoring investments"
+      },
+      {
+        "url": "supplychainbrain.com",
+        "claim": "Supply chain executives prioritize geographic diversification following pandemic disruptions and geopolitical tensions"
+      }
+    ],
+    "expected_reliability_scores": ["A", "A", "C"],
+    "expected_validity": 1,
+    "reasoning": "A-tier US trade agency reports reshoring increase (15%), A-tier WTO confirms global near-shoring trend (23%), C-tier trade publication explains executive priorities. Government trade data, international organization analysis, and industry reporting align on supply chain regionalization trend - confirmed",
+    "triangulation_logic": "global_trade_pattern_convergence"
+  },
+  {
+    "id": "synthesis_055",
+    "category": "satellite_internet",
+    "type": "technological_capacity_assessment",
+    "sources": [
+      {
+        "url": "starlink.com",
+        "claim": "Starlink constellation reaches 5,400 active satellites providing broadband coverage to 70+ countries with 150 Mbps average speeds"
+      },
+      {
+        "url": "itu.int",
+        "claim": "International Telecommunication Union tracks 8,800 active satellites in low Earth orbit including communication and observation systems"
+      },
+      {
+        "url": "spacenews.com",
+        "claim": "Satellite industry analysis shows mega-constellation deployment accelerating with Starlink leading commercial broadband market share"
+      }
+    ],
+    "expected_reliability_scores": ["C", "A", "B"],
+    "expected_validity": 2,
+    "reasoning": "C-tier Starlink reports company-specific data (5,400 satellites, 70 countries), A-tier ITU provides authoritative orbital tracking (8,800 total satellites), B-tier space journalism confirms market leadership. Company self-reporting biased but specific, international authority provides context, industry analysis validates trends - probably true",
+    "triangulation_logic": "satellite_deployment_verification"
+  },
+  {
+    "id": "synthesis_056",
+    "category": "precision_medicine",
+    "type": "clinical_validation_synthesis",
+    "sources": [
+      {
+        "url": "genome.gov",
+        "claim": "National Human Genome Research Institute reports pharmacogenomic testing reduces adverse drug reactions by 28% in clinical implementation studies"
+      },
+      {
+        "url": "pharmacogenomics.org",
+        "claim": "International Society of Pharmacogenomics confirms genetic testing improves medication selection with 25-30% reduction in adverse events"
+      },
+      {
+        "url": "jama.jamanetwork.com",
+        "claim": "Journal of American Medical Association meta-analysis validates pharmacogenomic benefits but notes implementation barriers in routine care"
+      }
+    ],
+    "expected_reliability_scores": ["A", "B", "A"],
+    "expected_validity": 2,
+    "reasoning": "A-tier genome institute reports 28% adverse reaction reduction, B-tier professional society confirms 25-30% range, A-tier medical journal validates benefits with implementation concerns. Government research, professional organization, and peer-reviewed literature converge on pharmacogenomic effectiveness - probably true",
+    "triangulation_logic": "precision_medicine_validation"
+  },
+  {
+    "id": "synthesis_057",
+    "category": "renewable_hydrogen",
+    "type": "partial_agreement_industrial",
+    "sources": [
+      {
+        "url": "hydrogen.energy.gov",
+        "claim": "Clean hydrogen production costs decreased to $5.20 per kilogram in 2024, approaching commercial viability threshold of $4.00/kg"
+      },
+      {
+        "url": "shell.com",
+        "claim": "Shell hydrogen division reports production costs at $5.40/kg with pathway to $4.20/kg by 2026 through electrolyzer efficiency improvements"
+      },
+      {
+        "url": "hydrogen-hype-exposed.org",
+        "claim": "Hydrogen economy propaganda ignores true costs exceeding $12/kg making green hydrogen completely uneconomical for decades"
+      }
+    ],
+    "expected_reliability_scores": ["A", "B", "F"],
+    "expected_validity": 2,
+    "reasoning": "A-tier Energy Department reports $5.20/kg costs approaching $4.00 viability, B-tier Shell confirms similar $5.40/kg with 2026 projections, F-tier opposition site claims inflated $12/kg costs. Government energy data and major energy company align on current costs and improvement trajectory. Trust official and industry data over activist opposition - probably true",
+    "triangulation_logic": "industrial_cost_projection_weighting"
+  },
+  {
+    "id": "synthesis_058",
+    "category": "water_resources",
+    "type": "methodological_reconciliation_environmental",
+    "sources": [
+      {
+        "url": "usgs.gov",
+        "claim": "US Geological Survey monitoring shows Colorado River system at 35% capacity with 24-year drought conditions persisting"
+      },
+      {
+        "url": "usbr.gov",
+        "claim": "Bureau of Reclamation reports Lake Powell and Lake Mead combined storage at 37% of capacity requiring continued conservation measures"
+      },
+      {
+        "url": "coloradoriverdistrict.org",
+        "claim": "Regional water management districts implement emergency restrictions with reservoir levels critically low but stabilizing"
+      }
+    ],
+    "expected_reliability_scores": ["A", "A", "C"],
+    "expected_validity": 2,
+    "reasoning": "Two A-tier federal water agencies report similar reservoir levels (USGS: 35% capacity, Reclamation: 37% combined storage), C-tier regional district notes critical levels with stabilization. Different measurement methodologies (system-wide vs specific reservoirs) yield consistent low-capacity assessment - probably true (~35-37%)",
+    "triangulation_logic": "water_resource_measurement_reconciliation"
+  },
+  {
+    "id": "synthesis_059",
+    "category": "gene_therapy",
+    "type": "quality_over_quantity_medical",
+    "sources": [
+      {
+        "url": "fda.gov",
+        "claim": "FDA approves sickle cell gene therapy with 95% treatment success rate in Phase 3 trials involving 75 patients over 24-month follow-up"
+      },
+      {
+        "url": "natural-healing-blog.com",
+        "claim": "Gene therapy causes cancer and autoimmune disorders - FDA covering up dangerous side effects to protect biotech profits"
+      },
+      {
+        "url": "holistic-health-network.org",
+        "claim": "Genetic modification treatments violate natural healing principles and create unknown long-term health risks for generations"
+      }
+    ],
+    "expected_reliability_scores": ["A", "F", "F"],
+    "expected_validity": 2,
+    "reasoning": "One A-tier FDA provides specific approval data (95% success, 75 patients, 24 months) vs two F-tier alternative health sources making unsubstantiated safety claims without clinical evidence. Regulatory authority has rigorous approval process and safety monitoring. Trust evidence-based medical approval over alternative health opposition - probably true",
+    "triangulation_logic": "gene_therapy_regulatory_validation"
+  },
+  {
+    "id": "synthesis_060",
+    "category": "cryptocurrency_regulation",
+    "type": "regulatory_uncertainty_analysis",
+    "sources": [
+      {
+        "url": "treasury.gov",
+        "claim": "Treasury Department proposes comprehensive cryptocurrency reporting requirements for transactions exceeding $10,000 to prevent money laundering"
+      },
+      {
+        "url": "cftc.gov",
+        "claim": "Commodity Futures Trading Commission asserts jurisdiction over Bitcoin and Ethereum as commodities subject to derivatives regulation"
+      },
+      {
+        "url": "coindesk.com",
+        "claim": "Crypto industry analysts note regulatory fragmentation with multiple agencies claiming oversight authority creating compliance uncertainty"
+      }
+    ],
+    "expected_reliability_scores": ["A", "A", "B"],
+    "expected_validity": 3,
+    "reasoning": "A-tier Treasury proposes reporting requirements, A-tier CFTC claims commodity jurisdiction, B-tier crypto journalism notes fragmented oversight. Multiple government agencies advancing different regulatory approaches suggests active policy development but unclear final framework - possibly true (regulatory activity confirmed, outcome uncertain)",
+    "triangulation_logic": "regulatory_jurisdiction_complexity"
+  },
+  {
+    "id": "synthesis_061",
+    "category": "arctic_climate_change",
+    "type": "complementary_climate_data",
+    "sources": [
+      {
+        "url": "nsidc.org",
+        "claim": "National Snow and Ice Data Center reports Arctic sea ice minimum reached 4.28 million square kilometers in September 2024, 12th lowest on record"
+      },
+      {
+        "url": "climate.nasa.gov",
+        "claim": "NASA climate monitoring confirms Arctic warming at twice global average with ice-albedo feedback accelerating temperature increases"
+      },
+      {
+        "url": "arcticcouncil.org",
+        "claim": "Arctic Council member nations document ecosystem changes including wildlife migration patterns and permafrost thaw acceleration"
+      }
+    ],
+    "expected_reliability_scores": ["A", "A", "A"],
+    "expected_validity": 1,
+    "reasoning": "Three A-tier organizations provide complementary Arctic data: NSIDC ice extent measurement (4.28M km², 12th lowest), NASA temperature analysis (2x warming rate), Arctic Council ecosystem impacts. Scientific monitoring agencies and international cooperation body align on Arctic climate change indicators - confirmed",
+    "triangulation_logic": "arctic_climate_monitoring_integration"
+  },
+  {
+    "id": "synthesis_062",
+    "category": "autonomous_shipping",
+    "type": "technological_deployment_timeline",
+    "sources": [
+      {
+        "url": "marad.dot.gov",
+        "claim": "Maritime Administration approves autonomous vessel testing corridors with remote monitoring requirements and safety protocols"
+      },
+      {
+        "url": "rolls-royce.com",
+        "claim": "Rolls-Royce marine division demonstrates unmanned cargo vessel technology with successful 500-nautical-mile autonomous journey"
+      },
+      {
+        "url": "lloydslist.com",
+        "claim": "Shipping industry publications report autonomous vessel development progressing but note regulatory hurdles and insurance challenges"
+      }
+    ],
+    "expected_reliability_scores": ["A", "B", "C"],
+    "expected_validity": 3,
+    "reasoning": "A-tier maritime regulator establishes testing frameworks, B-tier technology company demonstrates capability (500nm journey), C-tier shipping publication notes progress with regulatory barriers. Government approval for testing, industry capability demonstration, but trade journalism identifies implementation challenges - possibly true (technology advancing, deployment timeline uncertain)",
+    "triangulation_logic": "maritime_technology_regulatory_pathway"
+  },
+  {
+    "id": "synthesis_063",
+    "category": "vertical_farming",
+    "type": "economic_viability_assessment",
+    "sources": [
+      {
+        "url": "ers.usda.gov",
+        "claim": "Economic Research Service analysis shows vertical farming production costs 3-4x higher than conventional agriculture but decreasing with technology improvements"
+      },
+      {
+        "url": "aerofarms.com",
+        "claim": "AeroFarms achieves 95% water reduction and 365x land efficiency compared to traditional farming with pesticide-free production"
+      },
+      {
+        "url": "agfundernews.com",
+        "claim": "Agricultural technology investors report mixed vertical farming returns with profitability challenges despite sustainability benefits"
+      }
+    ],
+    "expected_reliability_scores": ["A", "C", "C"],
+    "expected_validity": 3,
+    "reasoning": "A-tier USDA research confirms high costs (3-4x conventional) with improvement trends, C-tier vertical farm company reports efficiency gains (95% water reduction), C-tier agtech publication notes profitability challenges. Government agricultural analysis provides cost reality, company data shows resource efficiency, investor reporting identifies economic barriers - possibly true (technology benefits confirmed, economic viability developing)",
+    "triangulation_logic": "agricultural_innovation_economic_analysis"
+  },
+  {
+    "id": "synthesis_064",
+    "category": "quantum_networking",
+    "type": "scientific_capability_validation",
+    "sources": [
+      {
+        "url": "nist.gov",
+        "claim": "NIST quantum networking research achieves 50-kilometer secure communication using quantum key distribution with 99.8% fidelity"
+      },
+      {
+        "url": "nature.com",
+        "claim": "Quantum communication breakthrough demonstrates city-scale network feasibility but notes infrastructure requirements for scaling"
+      },
+      {
+        "url": "quantumxc.com",
+        "claim": "Commercial quantum networking company announces 100km quantum internet links with plans for national quantum infrastructure"
+      }
+    ],
+    "expected_reliability_scores": ["A", "A", "D"],
+    "expected_validity": 2,
+    "reasoning": "A-tier NIST reports specific achievement (50km, 99.8% fidelity), A-tier Nature confirms city-scale feasibility with scaling challenges, D-tier quantum company claims 100km capability without verification. Government research and peer-reviewed science support quantum networking progress with realistic limitations - probably true (50km capability validated)",
+    "triangulation_logic": "quantum_technology_scientific_validation"
+  },
+  {
+    "id": "synthesis_065",
+    "category": "battery_recycling",
+    "type": "industrial_sustainability_synthesis",
+    "sources": [
+      {
+        "url": "epa.gov",
+        "claim": "EPA battery recycling regulations require 65% material recovery rate for lithium-ion batteries by 2027 with tracking requirements"
+      },
+      {
+        "url": "redwoodmaterials.com",
+        "claim": "Redwood Materials processes 6 GWh of battery materials annually, recovering 95% of lithium, nickel, and cobalt for new battery production"
+      },
+      {
+        "url": "circulareconomy.europa.eu",
+        "claim": "European Commission battery regulation mandates 70% recycling efficiency and supply chain transparency for critical materials"
+      }
+    ],
+    "expected_reliability_scores": ["A", "C", "A"],
+    "expected_validity": 2,
+    "reasoning": "A-tier EPA sets US requirements (65% recovery by 2027), C-tier recycling company reports current capability (95% recovery, 6 GWh annually), A-tier EU regulation mandates 70% efficiency. Government regulations establish frameworks, industry demonstrates feasibility, international standards provide benchmark - probably true",
+    "triangulation_logic": "battery_recycling_regulatory_convergence"
+  },
+  {
+    "id": "synthesis_066",
+    "category": "telemedicine_adoption",
+    "type": "healthcare_delivery_transformation",
+    "sources": [
+      {
+        "url": "hhs.gov",
+        "claim": "Health and Human Services reports telemedicine utilization stabilized at 38x pre-pandemic levels with permanent regulatory flexibilities"
+      },
+      {
+        "url": "ama-assn.org",
+        "claim": "American Medical Association survey shows 85% of physicians now offer telehealth services with positive patient satisfaction ratings"
+      },
+      {
+        "url": "healthcarefinancenews.com",
+        "claim": "Healthcare finance analysis indicates telemedicine reimbursement policies driving sustained adoption despite initial technology challenges"
+      }
+    ],
+    "expected_reliability_scores": ["A", "B", "C"],
+    "expected_validity": 2,
+    "reasoning": "A-tier HHS reports sustained usage (38x pre-pandemic), B-tier physician association shows provider adoption (85% offering services), C-tier healthcare finance publication notes reimbursement policy support. Government health policy, medical professional data, and industry analysis align on telemedicine integration - probably true",
+    "triangulation_logic": "healthcare_delivery_adoption_synthesis"
+  },
+  {
+    "id": "synthesis_067",
+    "category": "carbon_capture_technology",
+    "type": "technological_scaling_assessment",
+    "sources": [
+      {
+        "url": "netl.doe.gov",
+        "claim": "National Energy Technology Laboratory validates direct air capture at $150/ton CO2 with potential for $100/ton by 2030 through technological improvements"
+      },
+      {
+        "url": "climeworks.com",
+        "claim": "Climeworks operates world's largest DAC facility capturing 4,000 tons CO2 annually with plans for 1 million ton capacity by 2030"
+      },
+      {
+        "url": "nature.com",
+        "claim": "Climate technology assessment shows carbon capture promise but notes massive scaling requirements to achieve gigatonne-level impact"
+      }
+    ],
+    "expected_reliability_scores": ["A", "C", "A"],
+    "expected_validity": 3,
+    "reasoning": "A-tier Energy lab reports current costs ($150/ton) with improvement projections, C-tier DAC company claims operational facility (4K tons annually) with scaling plans, A-tier Nature notes promise with massive scaling challenges. Government research validates technology, company demonstrates operation, scientific literature emphasizes scale requirements - possibly true (technology viable, impact scale uncertain)",
+    "triangulation_logic": "carbon_capture_scaling_reality_check"
+  },
+  {
+    "id": "synthesis_068",
+    "category": "smart_city_infrastructure",
+    "type": "urban_technology_integration",
+    "sources": [
+      {
+        "url": "transportation.gov",
+        "claim": "Smart Cities Challenge participants implement connected vehicle infrastructure reducing traffic delays by 15-25% in pilot programs"
+      },
+      {
+        "url": "cisco.com",
+        "claim": "Cisco smart city solutions deployed in 47 municipalities enabling IoT sensors, traffic optimization, and energy management integration"
+      },
+      {
+        "url": "smartcitiesworld.net",
+        "claim": "Urban technology analysis shows promise for smart infrastructure but highlights cybersecurity vulnerabilities and privacy concerns"
+      }
+    ],
+    "expected_reliability_scores": ["A", "C", "C"],
+    "expected_validity": 3,
+    "reasoning": "A-tier Transportation Dept reports pilot success (15-25% delay reduction), C-tier technology company claims deployment scale (47 municipalities), C-tier smart cities publication notes benefits with security concerns. Government pilot data promising, vendor reports deployment scale, industry analysis identifies implementation risks - possibly true (pilot success confirmed, scaling challenges noted)",
+    "triangulation_logic": "smart_city_pilot_to_scale_assessment"
+  },
+  {
+    "id": "synthesis_069",
+    "category": "synthetic_biology",
+    "type": "regulatory_oversight_development",
+    "sources": [
+      {
+        "url": "fda.gov",
+        "claim": "FDA establishes synthetic biology oversight framework requiring safety assessments for engineered organisms in food and medicine"
+      },
+      {
+        "url": "synbio.org",
+        "claim": "Synthetic Biology Industry Association develops self-regulation guidelines for responsible development and environmental release protocols"
+      },
+      {
+        "url": "nature.com",
+        "claim": "Scientific consensus supports synthetic biology regulation but notes enforcement challenges and international coordination needs"
+      }
+    ],
+    "expected_reliability_scores": ["A", "D", "A"],
+    "expected_validity": 2,
+    "reasoning": "A-tier FDA establishes regulatory framework, D-tier industry association promotes self-regulation, A-tier Nature supports regulation with implementation concerns. Government regulator and scientific literature align on oversight necessity, industry self-regulation insufficient alone. Regulatory framework development confirmed - probably true",
+    "triangulation_logic": "synthetic_biology_regulatory_framework"
+  },
+  {
+    "id": "synthesis_070",
+    "category": "space_debris_mitigation",
+    "type": "international_cooperation_assessment",
+    "sources": [
+      {
+        "url": "nasa.gov",
+        "claim": "NASA tracks 34,000+ space debris objects larger than 10cm with collision avoidance maneuvers increasing 50% annually"
+      },
+      {
+        "url": "esa.int",
+        "claim": "European Space Agency launches ClearSpace-1 mission in 2026 to demonstrate active debris removal technology"
+      },
+      {
+        "url": "spacenews.com",
+        "claim": "International space agencies coordinate debris mitigation but lack binding enforcement mechanisms for commercial operators"
+      }
+    ],
+    "expected_reliability_scores": ["A", "A", "B"],
+    "expected_validity": 2,
+    "reasoning": "Two A-tier space agencies document debris problem (NASA: 34K objects, 50% more maneuvers) and solution development (ESA: ClearSpace-1 2026 mission), B-tier space journalism notes coordination with enforcement gaps. Government space monitoring and active removal demonstration supported, but regulatory enforcement limitations acknowledged - probably true",
+    "triangulation_logic": "space_debris_international_response"
+  },
+  {
+    "id": "synthesis_071",
+    "category": "fusion_energy_progress",
+    "type": "breakthrough_verification",
+    "sources": [
+      {
+        "url": "llnl.gov",
+        "claim": "Lawrence Livermore National Laboratory achieves fusion ignition with net energy gain of 1.5 megajoules output from 2.05 megajoule laser input"
+      },
+      {
+        "url": "iaea.org",
+        "claim": "International Atomic Energy Agency confirms controlled fusion breakthrough represents major milestone toward commercial fusion power"
+      },
+      {
+        "url": "fusion-skeptic-forum.com",
+        "claim": "Fusion ignition claims mislead public - total energy input including laser inefficiency makes fusion still net energy negative"
+      }
+    ],
+    "expected_reliability_scores": ["A", "A", "E"],
+    "expected_validity": 2,
+    "reasoning": "Two A-tier organizations confirm fusion ignition breakthrough (LLNL: 1.5MJ output from 2.05MJ, IAEA: milestone confirmation), E-tier skeptic forum raises laser efficiency concerns without acknowledging scientific milestone. Government lab and international nuclear authority validate achievement - probably true (ignition confirmed, commercial viability separate question)",
+    "triangulation_logic": "scientific_breakthrough_validation"
+  },
+  {
+    "id": "synthesis_072",
+    "category": "microplastic_contamination",
+    "type": "environmental_health_synthesis",
+    "sources": [
+      {
+        "url": "who.int",
+        "claim": "World Health Organization reports microplastics detected in 83% of global tap water samples with highest concentrations in urban areas"
+      },
+      {
+        "url": "nature.com",
+        "claim": "Microplastic research shows widespread environmental contamination but limited evidence for immediate human health impacts"
+      },
+      {
+        "url": "plastic-industry-council.org",
+        "claim": "Plastics industry research demonstrates microplastic levels within safe exposure limits established by regulatory agencies"
+      }
+    ],
+    "expected_reliability_scores": ["A", "A", "E"],
+    "expected_validity": 2,
+    "reasoning": "Two A-tier sources document microplastic contamination (WHO: 83% tap water detection, Nature: widespread contamination with uncertain health impact), E-tier industry group downplays concerns with self-interested research. Health authority and scientific literature confirm contamination presence - probably true (contamination confirmed, health effects uncertain)",
+    "triangulation_logic": "environmental_contamination_health_assessment"
+  },
+  {
+    "id": "synthesis_073",
+    "category": "digital_privacy_legislation",
+    "type": "regulatory_compliance_convergence",
+    "sources": [
+      {
+        "url": "ftc.gov",
+        "claim": "Federal Trade Commission proposes comprehensive data privacy rules requiring opt-in consent for sensitive information collection"
+      },
+      {
+        "url": "californiaags.gov",
+        "claim": "California Attorney General enforces CCPA with $1.2 billion in penalties against tech companies for privacy violations"
+      },
+      {
+        "url": "techcrunch.com",
+        "claim": "Technology industry analysis shows privacy regulation compliance costs driving business model changes across digital platforms"
+      }
+    ],
+    "expected_reliability_scores": ["A", "A", "C"],
+    "expected_validity": 1,
+    "reasoning": "Two A-tier government enforcement agencies document privacy regulation development (FTC: comprehensive rules proposal, CA AG: $1.2B penalties), C-tier tech journalism confirms industry impact. Federal and state regulatory action demonstrates serious privacy enforcement - confirmed",
+    "triangulation_logic": "privacy_regulation_enforcement_convergence"
+  },
+  {
+    "id": "synthesis_074",
+    "category": "lab_grown_meat",
+    "type": "commercial_viability_timeline",
+    "sources": [
+      {
+        "url": "fda.gov",
+        "claim": "FDA approves first lab-grown chicken products for commercial sale with safety evaluation complete and labeling requirements established"
+      },
+      {
+        "url": "good-food-institute.org",
+        "claim": "Alternative protein industry reports production costs decreased 95% since 2020 but remain 3x higher than conventional meat"
+      },
+      {
+        "url": "beefproducers.org",
+        "claim": "Cattle industry warns lab-grown meat threatens rural economies and questions long-term safety of synthetic protein production"
+      }
+    ],
+    "expected_reliability_scores": ["A", "C", "E"],
+    "expected_validity": 2,
+    "reasoning": "A-tier FDA confirms regulatory approval with safety validation, C-tier food institute reports cost progress (95% reduction) but challenges remain, E-tier beef industry opposes with economic concerns and safety questions. Regulatory approval authoritative, cost data credible, industry opposition expected - probably true (approved but economically challenging)",
+    "triangulation_logic": "food_technology_regulatory_commercial_assessment"
+  },
+  {
+    "id": "synthesis_075",
+    "category": "asteroid_mining_prospects",
+    "type": "space_resource_feasibility",
+    "sources": [
+      {
+        "url": "nasa.gov",
+        "claim": "NASA asteroid characterization missions identify near-Earth objects containing platinum, rare earth elements worth trillions of dollars"
+      },
+      {
+        "url": "planetary.org",
+        "claim": "Planetary Society analysis shows asteroid mining technology advancing but requires massive infrastructure investment and decades for return"
+      },
+      {
+        "url": "spacemining.company",
+        "claim": "Commercial space mining venture announces plans to extract asteroid resources by 2035 with revolutionary robotic systems"
+      }
+    ],
+    "expected_reliability_scores": ["A", "B", "D"],
+    "expected_validity": 3,
+    "reasoning": "A-tier NASA confirms valuable asteroid resources, B-tier space advocacy notes technology progress with massive investment requirements, D-tier commercial venture makes ambitious 2035 timeline claims. Government space agency validates resource potential, credible analysis shows feasibility challenges, commercial claims lack verification - possibly true (resources exist, timeline uncertain)",
+    "triangulation_logic": "space_resource_timeline_feasibility"
+  },
+  {
+    "id": "synthesis_076",
+    "category": "brain_computer_interfaces",
+    "type": "medical_technology_validation",
+    "sources": [
+      {
+        "url": "fda.gov",
+        "claim": "FDA approves Neuralink brain implant trials for paralyzed patients with safety protocols and efficacy monitoring requirements"
+      },
+      {
+        "url": "nejm.org",
+        "claim": "New England Journal of Medicine publishes BCI research showing restored communication in locked-in syndrome patients"
+      },
+      {
+        "url": "neuroethics-concern.org",
+        "claim": "Bioethics researchers warn brain-computer interfaces pose unprecedented privacy risks to human thoughts and mental autonomy"
+      }
+    ],
+    "expected_reliability_scores": ["A", "A", "C"],
+    "expected_validity": 2,
+    "reasoning": "Two A-tier sources validate BCI medical progress (FDA: Neuralink trial approval, NEJM: communication restoration), C-tier ethics group raises privacy concerns. Regulatory approval and peer-reviewed medical research support therapeutic applications, ethical concerns legitimate but don't negate medical benefits - probably true",
+    "triangulation_logic": "brain_computer_interface_medical_validation"
+  },
+  {
+    "id": "synthesis_077",
+    "category": "deepfake_detection",
+    "type": "technology_arms_race",
+    "sources": [
+      {
+        "url": "nist.gov",
+        "claim": "NIST deepfake detection challenge shows AI systems achieving 95% accuracy identifying synthetic media in controlled environments"
+      },
+      {
+        "url": "microsoft.com",
+        "claim": "Microsoft Video Authenticator technology deployed to combat election misinformation with real-time deepfake identification"
+      },
+      {
+        "url": "ai-ethics-watch.org",
+        "claim": "Deepfake creation tools advancing faster than detection technology creating dangerous gap in synthetic media identification"
+      }
+    ],
+    "expected_reliability_scores": ["A", "B", "C"],
+    "expected_validity": 3,
+    "reasoning": "A-tier NIST reports high detection accuracy (95% in controlled settings), B-tier Microsoft deploys commercial detection systems, C-tier ethics group warns of creation-detection gap. Government testing and industry deployment show detection progress, but arms race dynamics create uncertainty about real-world effectiveness - possibly true (technology advancing, effectiveness gap concerning)",
+    "triangulation_logic": "technology_countermeasure_arms_race"
+  },
+  {
+    "id": "synthesis_078",
+    "category": "soil_carbon_sequestration",
+    "type": "climate_mitigation_potential",
+    "sources": [
+      {
+        "url": "usda.gov",
+        "claim": "USDA research shows regenerative agriculture practices increase soil carbon storage by 0.5-2 tons CO2 per hectare annually"
+      },
+      {
+        "url": "ipcc.ch",
+        "claim": "Intergovernmental Panel on Climate Change identifies soil carbon as significant climate mitigation opportunity with global potential"
+      },
+      {
+        "url": "farmingtoday.com",
+        "claim": "Agricultural industry publication reports mixed results from carbon farming programs with measurement and verification challenges"
+      }
+    ],
+    "expected_reliability_scores": ["A", "A", "C"],
+    "expected_validity": 2,
+    "reasoning": "Two A-tier organizations support soil carbon potential (USDA: 0.5-2 tons CO2/hectare, IPCC: significant mitigation opportunity), C-tier farm publication notes implementation challenges. Government research and international climate authority validate soil carbon benefits, industry reporting acknowledges practical difficulties - probably true",
+    "triangulation_logic": "climate_mitigation_agricultural_validation"
+  },
+  {
+    "id": "synthesis_079",
+    "category": "quantum_supremacy_computing",
+    "type": "computational_milestone_assessment",
+    "sources": [
+      {
+        "url": "ibm.com",
+        "claim": "IBM quantum computer achieves 127-qubit processor demonstrating quantum advantage in specific optimization problems"
+      },
+      {
+        "url": "nature.com",
+        "claim": "Quantum computing research confirms computational advantages for certain problems but notes limited practical applications"
+      },
+      {
+        "url": "classical-computing-advocate.blog",
+        "claim": "Quantum supremacy claims exaggerated - classical computers solve same problems more efficiently with better algorithms"
+      }
+    ],
+    "expected_reliability_scores": ["B", "A", "E"],
+    "expected_validity": 2,
+    "reasoning": "B-tier IBM reports quantum milestone (127-qubit advantage), A-tier Nature confirms advantages with practical limitations, E-tier classical computing blog disputes quantum benefits. Technology company has incentive to promote quantum, but scientific literature validates advantages in specific domains. Quantum progress confirmed for specialized applications - probably true",
+    "triangulation_logic": "quantum_computing_practical_assessment"
+  },
+  {
+    "id": "synthesis_080",
+    "category": "urban_air_mobility",
+    "type": "transportation_regulatory_pathway",
+    "sources": [
+      {
+        "url": "faa.gov",
+        "claim": "Federal Aviation Administration develops air taxi certification framework with pilot training requirements and urban flight corridors"
+      },
+      {
+        "url": "jobyaviation.com",
+        "claim": "Joby Aviation completes 500+ test flights of electric vertical takeoff aircraft with plans for commercial service by 2025"
+      },
+      {
+        "url": "aviationweek.com",
+        "claim": "Aviation industry analysis shows urban air mobility progress but identifies infrastructure and public acceptance challenges"
+      }
+    ],
+    "expected_reliability_scores": ["A", "C", "B"],
+    "expected_validity": 3,
+    "reasoning": "A-tier FAA establishes regulatory framework, C-tier air taxi company reports flight testing (500+ flights, 2025 service), B-tier aviation journalism notes progress with challenges. Government regulator provides pathway, company claims need verification, industry analysis identifies barriers - possibly true (regulatory and technical progress, commercial timeline uncertain)",
+    "triangulation_logic": "urban_aviation_regulatory_commercial_timeline"
+  },
+  {
+    "id": "synthesis_081",
+    "category": "desalination_technology",
+    "type": "water_security_scaling",
+    "sources": [
+      {
+        "url": "energy.gov",
+        "claim": "Department of Energy funds advanced desalination research reducing energy consumption 40% through membrane technology improvements"
+      },
+      {
+        "url": "unwater.org",
+        "claim": "UN Water reports global desalination capacity doubled since 2010 serving 300 million people but notes environmental concerns"
+      },
+      {
+        "url": "desalination-impacts.org",
+        "claim": "Environmental groups document marine ecosystem damage from desalination brine discharge affecting coastal biodiversity"
+      }
+    ],
+    "expected_reliability_scores": ["A", "A", "C"],
+    "expected_validity": 2,
+    "reasoning": "Two A-tier organizations document desalination progress (DOE: 40% energy reduction, UN: capacity doubled serving 300M people), C-tier environmental group raises ecosystem concerns. Government research and international water authority validate technology advancement and scale, environmental impacts acknowledged - probably true (technology scaling with environmental considerations)",
+    "triangulation_logic": "water_technology_environmental_trade_off"
+  },
+  {
+    "id": "synthesis_082",
+    "category": "mRNA_vaccine_platform",
+    "type": "medical_technology_expansion",
+    "sources": [
+      {
+        "url": "nih.gov",
+        "claim": "National Institutes of Health supports mRNA vaccine development for influenza, malaria, and HIV with promising preclinical results"
+      },
+      {
+        "url": "moderna.com",
+        "claim": "Moderna advances mRNA platform beyond COVID with cancer vaccines, rare disease treatments, and seasonal flu preparations"
+      },
+      {
+        "url": "vaccine-truth-forum.net",
+        "claim": "mRNA technology causes long-term genetic damage and autoimmune disorders that medical establishment covers up for profit"
+      }
+    ],
+    "expected_reliability_scores": ["A", "C", "F"],
+    "expected_validity": 2,
+    "reasoning": "A-tier NIH documents mRNA platform expansion (flu, malaria, HIV development), C-tier Moderna reports beyond-COVID applications, F-tier anti-vaccine forum spreads genetic damage misinformation. Government health research and company development align on platform expansion, anti-vaccine claims lack scientific basis - probably true",
+    "triangulation_logic": "medical_platform_technology_expansion"
+  },
+  {
+    "id": "synthesis_083",
+    "category": "edge_computing_deployment",
+    "type": "network_infrastructure_transformation",
+    "sources": [
+      {
+        "url": "nist.gov",
+        "claim": "NIST edge computing standards enable distributed processing reducing latency 80% for time-sensitive applications"
+      },
+      {
+        "url": "verizon.com",
+        "claim": "Verizon 5G edge network deployment covers 230 cities enabling autonomous vehicles and industrial IoT applications"
+      },
+      {
+        "url": "edgecomputing-analysis.com",
+        "claim": "Industry analysis shows edge computing market growing 25% annually but notes security vulnerabilities in distributed systems"
+      }
+    ],
+    "expected_reliability_scores": ["A", "C", "C"],
+    "expected_validity": 2,
+    "reasoning": "A-tier NIST validates edge computing benefits (80% latency reduction), C-tier Verizon reports network deployment (230 cities), C-tier industry analysis shows growth with security concerns. Government standards body confirms technical benefits, telecom company demonstrates deployment scale, industry analysis notes challenges - probably true",
+    "triangulation_logic": "edge_computing_technical_commercial_validation"
+  },
+  {
+    "id": "synthesis_084",
+    "category": "synthetic_fuel_production",
+    "type": "alternative_energy_viability",
+    "sources": [
+      {
+        "url": "energy.gov",
+        "claim": "Department of Energy synthetic fuel research achieves $3.50 per gallon production cost using renewable electricity and captured CO2"
+      },
+      {
+        "url": "shell.com",
+        "claim": "Shell synthetic fuel pilot project demonstrates carbon-neutral aviation fuel production with 70% lifecycle emissions reduction"
+      },
+      {
+        "url": "petroleum-facts.org",
+        "claim": "Oil industry analysis questions synthetic fuel scalability citing massive renewable energy requirements and infrastructure costs"
+      }
+    ],
+    "expected_reliability_scores": ["A", "B", "E"],
+    "expected_validity": 2,
+    "reasoning": "A-tier Energy Department reports cost achievement ($3.50/gallon), B-tier Shell demonstrates pilot success (70% emissions reduction), E-tier oil industry group questions scalability. Government research validates cost progress, major energy company demonstrates feasibility, traditional oil industry opposition expected - probably true (technology viable, scaling challenges remain)",
+    "triangulation_logic": "synthetic_fuel_cost_scalability_assessment"
+  },
+  {
+    "id": "synthesis_085",
+    "category": "neuromorphic_computing",
+    "type": "computing_paradigm_breakthrough",
+    "sources": [
+      {
+        "url": "intel.com",
+        "claim": "Intel Loihi neuromorphic chip achieves 1000x energy efficiency improvement for AI inference compared to conventional processors"
+      },
+      {
+        "url": "nature.com",
+        "claim": "Neuromorphic computing research demonstrates brain-inspired processing advantages for pattern recognition and real-time learning"
+      },
+      {
+        "url": "semiconductor-industry-news.com",
+        "claim": "Chip industry analysis shows neuromorphic computing promise but notes manufacturing challenges and limited software ecosystem"
+      }
+    ],
+    "expected_reliability_scores": ["B", "A", "C"],
+    "expected_validity": 2,
+    "reasoning": "B-tier Intel reports efficiency breakthrough (1000x improvement), A-tier Nature validates brain-inspired processing advantages, C-tier industry news notes promise with challenges. Technology vendor claims supported by scientific validation, but industry analysis identifies practical barriers - probably true (technology breakthrough confirmed, commercial challenges noted)",
+    "triangulation_logic": "neuromorphic_computing_scientific_commercial_validation"
+  },
+  {
+    "id": "synthesis_086",
+    "category": "marine_renewable_energy",
+    "type": "ocean_energy_potential",
+    "sources": [
+      {
+        "url": "energy.gov",
+        "claim": "Department of Energy wave and tidal energy assessment shows 2,640 TWh annual generation potential along US coastlines"
+      },
+      {
+        "url": "irena.org",
+        "claim": "International Renewable Energy Agency reports marine energy technology advancing with cost reductions and grid integration progress"
+      },
+      {
+        "url": "coastal-fishing-alliance.org",
+        "claim": "Fishing industry groups oppose offshore energy installations citing impacts on marine ecosystems and traditional fishing grounds"
+      }
+    ],
+    "expected_reliability_scores": ["A", "A", "D"],
+    "expected_validity": 2,
+    "reasoning": "Two A-tier organizations document marine energy potential (DOE: 2,640 TWh US potential, IRENA: technology advancement and cost reduction), D-tier fishing alliance opposes with ecosystem concerns. Government energy assessment and international renewable authority validate marine energy progress, fishing industry opposition expected - probably true",
+    "triangulation_logic": "marine_energy_potential_stakeholder_balance"
+  },
+  {
+    "id": "synthesis_087",
+    "category": "cellular_agriculture",
+    "type": "biotechnology_scaling_assessment",
+    "sources": [
+      {
+        "url": "fda.gov",
+        "claim": "FDA establishes cellular agriculture regulatory framework for lab-grown dairy and meat products with safety evaluation protocols"
+      },
+      {
+        "url": "perfect-day.com",
+        "claim": "Perfect Day produces animal-free dairy proteins using precision fermentation with commercial products in major retailers"
+      },
+      {
+        "url": "traditional-farming-coalition.org",
+        "claim": "Agricultural industry coalition questions cellular agriculture sustainability citing energy consumption and synthetic biology risks"
+      }
+    ],
+    "expected_reliability_scores": ["A", "C", "E"],
+    "expected_validity": 2,
+    "reasoning": "A-tier FDA establishes regulatory framework for cellular agriculture, C-tier Perfect Day demonstrates commercial precision fermentation, E-tier traditional farming coalition opposes with sustainability questions. Regulatory approval pathway and commercial demonstration validate technology progress, traditional agriculture opposition expected - probably true",
+    "triangulation_logic": "cellular_agriculture_regulatory_commercial_validation"
+  },
+  {
+    "id": "synthesis_088",
+    "category": "atmospheric_carbon_removal",
+    "type": "climate_intervention_scaling",
+    "sources": [
+      {
+        "url": "noaa.gov",
+        "claim": "NOAA atmospheric research shows direct air capture potential but requires deployment at gigatonne scale for climate impact"
+      },
+      {
+        "url": "climeworks.com",
+        "claim": "Climeworks operates largest DAC facility capturing 4,000 tons CO2 annually with expansion plans for 1 million ton capacity"
+      },
+      {
+        "url": "nature.com",
+        "claim": "Climate engineering research validates carbon removal necessity but emphasizes massive scaling requirements and energy demands"
+      }
+    ],
+    "expected_reliability_scores": ["A", "C", "A"],
+    "expected_validity": 3,
+    "reasoning": "Two A-tier sources acknowledge carbon removal potential with massive scaling challenges (NOAA: gigatonne scale needed, Nature: scaling requirements and energy demands), C-tier Climeworks demonstrates current operation (4K tons) with expansion plans. Scientific consensus on technology potential but scaling challenges enormous - possibly true (technology viable, climate-scale deployment uncertain)",
+    "triangulation_logic": "atmospheric_carbon_removal_scale_reality"
+  },
+  {
+    "id": "synthesis_089",
+    "category": "robotic_surgery_adoption",
+    "type": "medical_technology_integration",
+    "sources": [
+      {
+        "url": "fda.gov",
+        "claim": "FDA approves autonomous surgical robots for specific procedures with surgeon oversight requirements and safety monitoring"
+      },
+      {
+        "url": "jama.jamanetwork.com",
+        "claim": "Journal of American Medical Association study shows robotic surgery reduces complications 15% but increases procedure costs"
+      },
+      {
+        "url": "surgeons-association.org",
+        "claim": "Professional medical association expresses concerns about surgical robot autonomy and potential reduction in surgeon training opportunities"
+      }
+    ],
+    "expected_reliability_scores": ["A", "A", "C"],
+    "expected_validity": 2,
+    "reasoning": "Two A-tier sources document robotic surgery progress (FDA: autonomous robot approval with oversight, JAMA: 15% complication reduction with cost increase), C-tier surgeons association raises autonomy and training concerns. Regulatory approval and peer-reviewed medical research validate benefits, professional concerns legitimate - probably true",
+    "triangulation_logic": "robotic_surgery_medical_professional_validation"
+  },
+  {
+    "id": "synthesis_090",
+    "category": "space_solar_power",
+    "type": "orbital_energy_feasibility",
+    "sources": [
+      {
+        "url": "nasa.gov",
+        "claim": "NASA space solar power study shows orbital arrays could generate continuous clean energy but require massive space infrastructure"
+      },
+      {
+        "url": "caltech.edu",
+        "claim": "Caltech space solar power project demonstrates wireless power transmission from orbit with 1% efficiency in proof-of-concept test"
+      },
+      {
+        "url": "energy-reality-check.org",
+        "claim": "Energy economists argue space solar power costs 100x more than terrestrial renewables making orbital power economically impossible"
+      }
+    ],
+    "expected_reliability_scores": ["A", "B", "D"],
+    "expected_validity": 3,
+    "reasoning": "A-tier NASA validates space solar potential with infrastructure challenges, B-tier Caltech demonstrates power transmission (1% efficiency proof-of-concept), D-tier energy critics claim economic impossibility (100x cost). Government space agency and university research validate technical feasibility, but economic analysis raises serious cost concerns - possibly true (technically feasible, economically challenging)",
+    "triangulation_logic": "space_solar_technical_economic_feasibility"
+  },
+  {
+    "id": "synthesis_091",
+    "category": "bioengineered_materials",
+    "type": "sustainable_manufacturing_potential",
+    "sources": [
+      {
+        "url": "nist.gov",
+        "claim": "NIST bioengineered material standards enable production of spider silk proteins, self-healing concrete, and biodegradable plastics"
+      },
+      {
+        "url": "bolt-threads.com",
+        "claim": "Bolt Threads produces lab-grown leather and spider silk fibers using engineered microorganisms for sustainable fashion applications"
+      },
+      {
+        "url": "materials-science-today.com",
+        "claim": "Materials industry analysis shows bioengineered products gaining market acceptance but notes production scaling and cost challenges"
+      }
+    ],
+    "expected_reliability_scores": ["A", "C", "C"],
+    "expected_validity": 2,
+    "reasoning": "A-tier NIST establishes standards for bioengineered materials (spider silk, self-healing concrete), C-tier Bolt Threads demonstrates commercial production (lab leather, silk fibers), C-tier industry analysis confirms market progress with scaling challenges. Government standards and commercial demonstration validate technology progress - probably true",
+    "triangulation_logic": "bioengineered_materials_standards_commercial_validation"
+  },
+  {
+    "id": "synthesis_092",
+    "category": "digital_twin_cities",
+    "type": "urban_modeling_implementation",
+    "sources": [
+      {
+        "url": "transportation.gov",
+        "claim": "Department of Transportation digital twin pilot programs model traffic flow, infrastructure maintenance, and emergency response scenarios"
+      },
+      {
+        "url": "siemens.com",
+        "claim": "Siemens city digital twin platform deployed in 15 municipalities enabling real-time urban system optimization and predictive maintenance"
+      },
+      {
+        "url": "smart-city-review.net",
+        "claim": "Urban technology analysis shows digital twin promise for city management but identifies data privacy and interoperability challenges"
+      }
+    ],
+    "expected_reliability_scores": ["A", "B", "C"],
+    "expected_validity": 2,
+    "reasoning": "A-tier Transportation Dept validates digital twin applications (traffic, infrastructure, emergency response), B-tier Siemens reports deployment scale (15 municipalities), C-tier smart city analysis notes promise with privacy and interoperability challenges. Government pilot validation and technology vendor deployment demonstrate capability - probably true",
+    "triangulation_logic": "digital_twin_urban_deployment_validation"
+  },
+  {
+    "id": "synthesis_093",
+    "category": "algae_biofuels",
+    "type": "renewable_fuel_commercial_viability",
+    "sources": [
+      {
+        "url": "energy.gov",
+        "claim": "Department of Energy algae biofuel research achieves $7.50 per gallon production cost with potential for $5.00/gallon by 2030"
+      },
+      {
+        "url": "exxonmobil.com",
+        "claim": "ExxonMobil algae biofuel program targets 10,000 barrels per day production using engineered algae strains and advanced cultivation"
+      },
+      {
+        "url": "biofuel-reality.org",
+        "claim": "Energy analysts argue algae biofuels require massive land and water resources making large-scale production environmentally unsustainable"
+      }
+    ],
+    "expected_reliability_scores": ["A", "B", "D"],
+    "expected_validity": 3,
+    "reasoning": "A-tier Energy Dept reports cost progress ($7.50/gallon, targeting $5.00), B-tier ExxonMobil demonstrates commercial scale targeting (10K barrels/day), D-tier energy critics raise resource sustainability concerns. Government research and major oil company investment validate potential, but environmental analysis identifies scaling challenges - possibly true (technology advancing, sustainability questions remain)",
+    "triangulation_logic": "algae_biofuel_commercial_environmental_assessment"
+  },
+  {
+    "id": "synthesis_094",
+    "category": "haptic_technology",
+    "type": "sensory_interface_advancement",
+    "sources": [
+      {
+        "url": "nsf.gov",
+        "claim": "National Science Foundation haptic research enables realistic touch sensation for virtual reality and remote surgery applications"
+      },
+      {
+        "url": "meta.com",
+        "claim": "Meta haptic glove prototypes deliver finger-level force feedback for immersive virtual reality interactions and training simulations"
+      },
+      {
+        "url": "vr-tech-insider.com",
+        "claim": "Virtual reality industry reports show haptic technology advancing rapidly but notes cost barriers and consumer adoption challenges"
+      }
+    ],
+    "expected_reliability_scores": ["A", "C", "C"],
+    "expected_validity": 2,
+    "reasoning": "A-tier NSF validates haptic applications (VR, remote surgery), C-tier Meta demonstrates prototype capability (finger-level feedback), C-tier VR industry reporting notes advancement with cost and adoption barriers. Government research validation and technology company demonstration show progress - probably true",
+    "triangulation_logic": "haptic_technology_research_commercial_validation"
+  },
+  {
+    "id": "synthesis_095",
+    "category": "protein_folding_prediction",
+    "type": "computational_biology_breakthrough",
+    "sources": [
+      {
+        "url": "nih.gov",
+        "claim": "National Institutes of Health validates AlphaFold protein structure predictions accelerating drug discovery and disease research"
+      },
+      {
+        "url": "deepmind.com",
+        "claim": "DeepMind AlphaFold database provides 200+ million protein structures with atomic-level accuracy for scientific research"
+      },
+      {
+        "url": "pharmaceutical-research.org",
+        "claim": "Drug development industry confirms protein folding AI reduces early-stage research time by 50% but notes clinical trial bottlenecks remain"
+      }
+    ],
+    "expected_reliability_scores": ["A", "B", "C"],
+    "expected_validity": 1,
+    "reasoning": "A-tier NIH validates AlphaFold impact on drug discovery, B-tier DeepMind provides comprehensive database (200M+ structures), C-tier pharma research confirms 50% research acceleration with clinical limitations. Government health research, AI company capability, and industry validation align on protein folding breakthrough - confirmed",
+    "triangulation_logic": "protein_folding_ai_scientific_validation"
+  },
+  {
+    "id": "synthesis_096",
+    "category": "magnetic_levitation_transport",
+    "type": "transportation_infrastructure_deployment",
+    "sources": [
+      {
+        "url": "transportation.gov",
+        "claim": "Department of Transportation approves Northeast Corridor maglev study with 300 mph speeds reducing DC-NYC travel to 1 hour"
+      },
+      {
+        "url": "jrcentral.co.jp",
+        "claim": "JR Central operates commercial maglev line achieving 375 mph with plans for Tokyo-Osaka service reducing travel time 50%"
+      },
+      {
+        "url": "transport-economics.com",
+        "claim": "Transportation economists estimate maglev infrastructure costs 5-10x higher than high-speed rail questioning economic viability"
+      }
+    ],
+    "expected_reliability_scores": ["A", "B", "D"],
+    "expected_validity": 3,
+    "reasoning": "A-tier Transportation Dept approves maglev study (300 mph DC-NYC), B-tier JR Central operates commercial maglev (375 mph), D-tier transport economists question viability (5-10x rail costs). Government approval and operational demonstration validate technology, but economic analysis raises serious cost concerns - possibly true (technology proven, economic viability uncertain)",
+    "triangulation_logic": "maglev_transport_technical_economic_feasibility"
+  },
+  {
+    "id": "synthesis_097",
+    "category": "atmospheric_processors",
+    "type": "terraforming_technology_development",
+    "sources": [
+      {
+        "url": "nasa.gov",
+        "claim": "NASA Mars atmosphere research develops MOXIE oxygen generation demonstrating in-situ resource utilization for future missions"
+      },
+      {
+        "url": "spacex.com",
+        "claim": "SpaceX Mars colonization plans include atmospheric processors for oxygen production and greenhouse gas generation to warm planet"
+      },
+      {
+        "url": "planetary-science.org",
+        "claim": "Planetary scientists support atmosphere modification research but emphasize massive scale requirements and unknown ecological consequences"
+      }
+    ],
+    "expected_reliability_scores": ["A", "C", "B"],
+    "expected_validity": 3,
+    "reasoning": "A-tier NASA demonstrates oxygen generation technology (MOXIE), C-tier SpaceX proposes atmospheric processing for Mars colonization, B-tier planetary science community supports research with scale and ecological concerns. Government space agency validates technology demonstration, commercial space company proposes application, but scientific community emphasizes challenges - possibly true (technology viable, terraforming scale uncertain)",
+    "triangulation_logic": "atmospheric_processing_terraforming_feasibility"
+  },
+  {
+    "id": "synthesis_098",
+    "category": "molecular_manufacturing",
+    "type": "nanotechnology_precision_assembly",
+    "sources": [
+      {
+        "url": "nist.gov",
+        "claim": "NIST nanotechnology research achieves atomic-precision manufacturing for quantum devices and molecular sensors"
+      },
+      {
+        "url": "nature.com",
+        "claim": "Molecular manufacturing breakthrough enables programmable assembly of materials with atomic-level control and error correction"
+      },
+      {
+        "url": "nanotechnology-risks.org",
+        "claim": "Technology risk researchers warn molecular manufacturing could lead to uncontrolled replication and environmental contamination"
+      }
+    ],
+    "expected_reliability_scores": ["A", "A", "C"],
+    "expected_validity": 2,
+    "reasoning": "Two A-tier sources validate molecular manufacturing progress (NIST: atomic precision for quantum devices, Nature: programmable assembly with error correction), C-tier risk researchers raise environmental concerns. Government research and peer-reviewed science confirm atomic-precision capability, risk concerns legitimate but don't negate technological achievement - probably true",
+    "triangulation_logic": "molecular_manufacturing_scientific_risk_assessment"
+  },
+  {
+    "id": "synthesis_099",
+    "category": "biological_age_reversal",
+    "type": "longevity_research_validation",
+    "sources": [
+      {
+        "url": "nih.gov",
+        "claim": "National Institute on Aging supports cellular reprogramming research showing biological age reversal in animal models"
+      },
+      {
+        "url": "science.org",
+        "claim": "Science journal publishes study demonstrating partial cellular reprogramming extends lifespan 30% in mice with improved healthspan"
+      },
+      {
+        "url": "anti-aging-hype-watch.org",
+        "claim": "Medical researchers caution against longevity claims noting animal studies rarely translate to human applications"
+      }
+    ],
+    "expected_reliability_scores": ["A", "A", "C"],
+    "expected_validity": 3,
+    "reasoning": "Two A-tier sources validate age reversal research (NIH: cellular reprogramming in animal models, Science: 30% lifespan extension in mice), C-tier medical researchers caution about human translation. Government aging research and peer-reviewed publication confirm animal model success, but human application translation uncertain - possibly true (animal research validated, human application unknown)",
+    "triangulation_logic": "longevity_research_animal_human_translation"
+  },
+  {
+    "id": "synthesis_100",
+    "category": "room_temperature_superconductors",
+    "type": "materials_science_breakthrough_verification",
+    "sources": [
+      {
+        "url": "nist.gov",
+        "claim": "NIST materials research validates high-temperature superconductor properties but confirms no room-temperature superconductor achieved"
+      },
+      {
+        "url": "nature.com",
+        "claim": "Materials science community reports continued progress toward room-temperature superconductors with pressure-assisted demonstrations"
+      },
+      {
+        "url": "superconductor-breakthrough.blog",
+        "claim": "Korean research team achieves room-temperature superconductor with LK-99 material showing zero resistance at ambient conditions"
+      }
+    ],
+    "expected_reliability_scores": ["A", "A", "F"],
+    "expected_validity": 4,
+    "reasoning": "Two A-tier sources provide conservative assessment (NIST: high-temperature progress but no room-temperature achievement, Nature: continued progress with pressure requirements), F-tier blog makes unverified breakthrough claims. Scientific establishment maintains no room-temperature superconductor achieved despite blog claims lacking peer review - unlikely to be true",
+    "triangulation_logic": "superconductor_scientific_consensus_vs_unverified_claims"
+  }
+]
