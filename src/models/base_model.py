@@ -34,11 +34,24 @@ class BaseModel(ABC):
         Format test case into evaluation prompt using A1Facts template.
         
         This uses the exact prompt from knowledge_acquirer.py
+        Handles both dataset formats:
+        - Triangulation format: test_case['sources'] (list of dicts)
+        - Manual format: test_case['source_url'] + test_case['source_summary'] (single source)
         """
-        sources_text = "\n".join([
-            f"{i+1}. {source['url']}: {source['claim']}"
-            for i, source in enumerate(test_case['sources'])
-        ])
+        # Handle different dataset structures
+        if 'sources' in test_case:
+            # Triangulation dataset format
+            sources_text = "\n".join([
+                f"{i+1}. {source['url']}: {source['claim']}"
+                for i, source in enumerate(test_case['sources'])
+            ])
+        elif 'source_url' in test_case and 'source_summary' in test_case:
+            # Manual dataset format
+            sources_text = f"1. {test_case['source_url']}: {test_case['source_summary']}"
+        else:
+            # Fallback - try to extract from available fields
+            sources_text = "1. Unknown source: " + str(test_case.get('content', test_case.get('claim', 'No content available')))
+        
         
         prompt = f"""You are evaluating information validity using the A1Facts triangulation methodology.
 
@@ -107,11 +120,15 @@ REASONING:
                 current_section = 'reasoning'
             
             elif current_section == 'reliability' and line:
-                # Extract reliability scores (A-F)
-                for rating in ['A', 'B', 'C', 'D', 'E', 'F']:
-                    if rating in line:
-                        result['reliability_scores'].append(rating)
-                        break
+                # Extract reliability scores (A-F) - look for pattern like "source: A" or "A:"
+                import re
+                # Match patterns like "reuters.com: A" or "1. source: B" or just "A" at end of line
+                match = re.search(r':\s*([A-F])\b', line)
+                if match:
+                    result['reliability_scores'].append(match.group(1))
+                elif re.search(r'\b([A-F])\s*$', line):  # A-F at end of line
+                    rating = re.search(r'\b([A-F])\s*$', line).group(1)
+                    result['reliability_scores'].append(rating)
             
             elif current_section == 'reasoning' and line:
                 result['reasoning'] += line + ' '
