@@ -2,23 +2,23 @@
 # A1Facts Benchmark Evaluation Report
 
 ## Dataset Overview
-- **Total Test Cases**: 134
-- **Models Evaluated**: 7
+- **Total Test Cases**: 100
+- **Models Evaluated**: 10
 - **Evaluation Date**: October 15, 2025
 
 ## 🏆 Top Performing Model
-**gemini-2.5-pro** with overall score of **0.442**
+**o3** with overall score of **0.406**
 
 ## 📈 Aggregate Performance Metrics
 
 ### Tier 1: Strict Accuracy (Both Correct)
-- **Average**: 17.2%
-- **Best**: 23.9%
-- **Worst**: 5.2%
+- **Average**: 13.2%
+- **Best**: 23.0%
+- **Worst**: 7.0%
 
 ### Tier 2: Individual Accuracies
-- **Validity Average**: 44.5%
-- **Reliability Average**: 66.2%
+- **Validity Average**: 35.5%
+- **Reliability Average**: 69.7%
 
 ### Tier 3: Detailed Analysis
 Available in individual visualizations and comprehensive dashboard.
@@ -38,4 +38,4 @@ Available in individual visualizations and comprehensive dashboard.
 - Reliability assessment generally outperforms validity assessment
 - Significant variation in per-class performance across validity levels
 
-Generated on: 2025-10-15 22:07:07
+Generated on: 2025-10-19 09:05:53
